@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-valid.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-valid.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>valid: The DTD validation</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-uri.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xinclude.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">valid</span></h2>
 <p>valid - The DTD validation</p>
 <p>API for the DTD handling and the validity checking </p>
@@ -268,8 +259,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback called when a validity error is found. This is a message oriented function similar to an *printf function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>usually an <a href="libxml2-valid.html#xmlValidCtxtPtr">xmlValidCtxtPtr</a> to a validity error context, but comes from ctxt-&gt;userData (which normally contains such a pointer); ctxt-&gt;userData can be changed by the user.</td>
@@ -293,8 +284,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback called when a validity warning is found. This is a message oriented function similar to an *printf function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>usually an <a href="libxml2-valid.html#xmlValidCtxtPtr">xmlValidCtxtPtr</a> to a validity error context, but comes from ctxt-&gt;userData (which normally contains such a pointer); ctxt-&gt;userData can be changed by the user.</td>
@@ -318,8 +309,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new <a href="libxml2-SAX.html#attribute">attribute</a> declaration Note that @tree becomes the ownership of the DTD</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -371,8 +362,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new element declaration</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -408,8 +399,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new id declaration</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -442,8 +433,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new id declaration Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>attr</tt></i>:</span></td>
 <td>the <a href="libxml2-SAX.html#attribute">attribute</a> holding the ID</td>
@@ -467,8 +458,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new notation declaration</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -504,8 +495,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED, do not use. This function will be removed from the public API. Register a new ref declaration</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -538,8 +529,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a copy of an <a href="libxml2-SAX.html#attribute">attribute</a> table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An <a href="libxml2-SAX.html#attribute">attribute</a> table</td>
@@ -559,8 +550,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a copy of an element content description.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document owning the element declaration</td>
@@ -584,8 +575,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a copy of an element content description. Deprecated, use <a href="libxml2-valid.html#xmlCopyDocElementContent">xmlCopyDocElementContent</a> instead</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>An element content pointer.</td>
@@ -605,8 +596,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a copy of an element table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An element table</td>
@@ -626,8 +617,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy an enumeration <a href="libxml2-SAX.html#attribute">attribute</a> node (recursive).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the tree to copy.</td>
@@ -647,8 +638,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a copy of a notation table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>A notation table</td>
@@ -668,8 +659,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>create and initialize an enumeration <a href="libxml2-SAX.html#attribute">attribute</a> node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>the enumeration name or NULL</td>
@@ -689,8 +680,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-xmlsave.html#xmlSaveTree">xmlSaveTree</a>. This will dump the content of the <a href="libxml2-SAX.html#attribute">attribute</a> declaration as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -710,8 +701,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Don't use. This will dump the content of the <a href="libxml2-SAX.html#attribute">attribute</a> table as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -731,8 +722,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-xmlsave.html#xmlSaveTree">xmlSaveTree</a>. This will dump the content of the element declaration as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -752,8 +743,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Don't use. This will dump the content of the element table as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -773,8 +764,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Don't use. This will dump the content the notation declaration as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -794,8 +785,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Don't use. This will dump the content of the notation table as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -815,8 +806,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate the memory used by an entities hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An <a href="libxml2-SAX.html#attribute">attribute</a> table</td>
 </tr></tbody>
@@ -830,8 +821,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free an element content structure. The whole subtree is removed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document owning the element declaration</td>
@@ -851,8 +842,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free an element content structure. The whole subtree is removed. Deprecated, use <a href="libxml2-valid.html#xmlFreeDocElementContent">xmlFreeDocElementContent</a> instead</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the element content tree to free</td>
 </tr></tbody>
@@ -866,8 +857,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate the memory used by an element hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An element table</td>
 </tr></tbody>
@@ -881,8 +872,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>free an enumeration <a href="libxml2-SAX.html#attribute">attribute</a> node (recursive).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the tree to free.</td>
 </tr></tbody>
@@ -896,8 +887,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate the memory used by an ID hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An id table</td>
 </tr></tbody>
@@ -911,8 +902,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate the memory used by an entities hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An notation table</td>
 </tr></tbody>
@@ -926,8 +917,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED, do not use. This function will be removed from the public API. Deallocate the memory used by an Ref hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An ref table</td>
 </tr></tbody>
@@ -941,8 +932,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a validation context structure.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the validation context to free</td>
 </tr></tbody>
@@ -956,8 +947,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search the DTD for the description of this <a href="libxml2-SAX.html#attribute">attribute</a> on this element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dtd</tt></i>:</span></td>
 <td>a pointer to the DtD to search</td>
@@ -985,8 +976,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search the DTD for the description of this element NOTE: A NULL return value can also mean that a memory allocation failed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dtd</tt></i>:</span></td>
 <td>a pointer to the DtD to search</td>
@@ -1010,8 +1001,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search the DTD for the description of this notation</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dtd</tt></i>:</span></td>
 <td>a pointer to the DtD to search</td>
@@ -1035,8 +1026,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search the DTD for the description of this qualified <a href="libxml2-SAX.html#attribute">attribute</a> on this element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dtd</tt></i>:</span></td>
 <td>a pointer to the DtD to search</td>
@@ -1068,8 +1059,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search the DTD for the description of this element</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dtd</tt></i>:</span></td>
 <td>a pointer to the DtD to search</td>
@@ -1097,8 +1088,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search the <a href="libxml2-SAX.html#attribute">attribute</a> declaring the given ID</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>pointer to the document</td>
@@ -1122,8 +1113,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED, do not use. This function will be removed from the public API. Find the set of references for the supplied ID.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>pointer to the document</td>
@@ -1147,8 +1138,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Determine whether an <a href="libxml2-SAX.html#attribute">attribute</a> is of type ID. In case we have DTD(s) then this is done if DTD loading has been requested. In the case of HTML documents parsed with the HTML parser, then ID detection is done systematically.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1178,8 +1169,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search in the DtDs whether an element accept Mixed content (or ANY) basically if it is supposed to accept text childs</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1203,8 +1194,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED, do not use. This function will be removed from the public API. Determine whether an <a href="libxml2-SAX.html#attribute">attribute</a> is of type Ref. In case we have DTD(s) then this is simple, otherwise we use an heuristic: name Ref (upper or lowercase).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1234,8 +1225,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Allocate an element content structure for the document.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1263,8 +1254,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Allocate an element content structure. Deprecated in favor of <a href="libxml2-valid.html#xmlNewDocElementContent">xmlNewDocElementContent</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>the subelement name or NULL</td>
@@ -1288,8 +1279,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Allocate a validation context structure.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>NULL if not, otherwise the new validation context structure</td>
 </tr></tbody>
@@ -1303,8 +1294,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove the given <a href="libxml2-SAX.html#attribute">attribute</a> from the ID table maintained internally.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1329,8 +1320,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED, do not use. This function will be removed from the public API. Remove the given <a href="libxml2-SAX.html#attribute">attribute</a> from the Ref table maintained internally.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1355,8 +1346,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This will dump the content of the element content definition Intended just for the debug routine</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>an output buffer</td>
@@ -1384,8 +1375,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deprecated, unsafe, use <a href="libxml2-valid.html#xmlSnprintfElementContent">xmlSnprintfElementContent</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>an output buffer</td>
@@ -1409,8 +1400,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. (Re)Build the automata associated to the content model of this element</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>a validation context</td>
@@ -1434,8 +1425,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Does the validation related extra step of the normalization of <a href="libxml2-SAX.html#attribute">attribute</a> values: If the declared value is not CDATA, then the XML processor must further process the normalized <a href="libxml2-SAX.html#attribute">attribute</a> value by discarding any leading and trailing space (#x20) characters, and by replacing sequences of space (#x20) <a href="libxml2-SAX.html#characters">characters</a> by single space (#x20) character. Also check VC: Standalone Document Declaration in P32, and update ctxt-&gt;valid accordingly</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context or NULL</td>
@@ -1471,8 +1462,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build/extend a list of potential children allowed by the content tree</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctree</tt></i>:</span></td>
 <td>an element content tree</td>
@@ -1504,8 +1495,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This function returns the list of authorized children to insert within an existing tree while respecting the validity constraints forced by the Dtd. The insertion point is defined using @prev and @next in the following ways: to insert before 'node': xmlValidGetValidElements(node-&gt;prev, node, ... to insert next 'node': xmlValidGetValidElements(node, node-&gt;next, ... to replace 'node': xmlValidGetValidElements(node-&gt;prev, node-&gt;next, ... to prepend a child to 'node': xmlValidGetValidElements(NULL, node-&gt;childs, to append a child to 'node': xmlValidGetValidElements(node-&gt;last, NULL, ... pointers to the element names are inserted at the beginning of the array and do not need to be freed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>prev</tt></i>:</span></td>
 <td>an element to insert after</td>
@@ -1537,8 +1528,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Does the validation related extra step of the normalization of <a href="libxml2-SAX.html#attribute">attribute</a> values: If the declared value is not CDATA, then the XML processor must further process the normalized <a href="libxml2-SAX.html#attribute">attribute</a> value by discarding any leading and trailing space (#x20) characters, and by replacing sequences of space (#x20) <a href="libxml2-SAX.html#characters">characters</a> by single space (#x20) character.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -1570,8 +1561,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a single <a href="libxml2-SAX.html#attribute">attribute</a> definition basically it does the following checks as described by the XML-1.0 recommendation: - [ VC: Attribute Default Legal ] - [ VC: Enumeration ] - [ VC: ID Attribute Default ] The ID/IDREF uniqueness and matching are done separately</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1599,8 +1590,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Validate that the given <a href="libxml2-SAX.html#attribute">attribute</a> value match the proper production [ VC: ID ] Values of type ID must match the Name production.... [ VC: IDREF ] Values of type IDREF must match the Name production, and values of type IDREFS must match Names ... [ VC: Entity Name ] Values of type ENTITY must match the Name production, values of type ENTITIES must match Names ... [ VC: Name Token ] Values of type NMTOKEN must match the Nmtoken production; values of type NMTOKENS must match Nmtokens.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>type</tt></i>:</span></td>
 <td>an <a href="libxml2-SAX.html#attribute">attribute</a> type</td>
@@ -1624,8 +1615,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Try to validate the document instance basically it does the all the checks described by the XML Rec i.e. validates the internal and external subset (if present) and validate the document tree.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1649,8 +1640,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Does the final step for the document validation once all the incremental validation steps have been completed basically it does the following checks described by the XML Rec Check all the IDREF/IDREFS attributes definition for validity</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1674,8 +1665,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Try to validate the document against the dtd instance Basically it does check all the definitions in the DtD. Note the the internal subset (if present) is de-coupled (i.e. not used), which could give problems if ID or IDREF is present.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1703,8 +1694,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Does the final step for the dtds validation once all the subsets have been parsed basically it does the following checks described by the XML Rec - check that ENTITY and ENTITIES type attributes default or possible values matches one of the defined entities. - check that NOTATION type attributes default or possible values matches one of the defined notations.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1728,8 +1719,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Try to validate the subtree under an element</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1757,8 +1748,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a single element definition basically it does the following checks as described by the XML-1.0 recommendation: - [ VC: One ID per Element Type ] - [ VC: No Duplicate Types ] - [ VC: Unique Element Type Declaration ]</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1786,8 +1777,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Validate that the given value match Name production</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>an Name value</td>
@@ -1807,8 +1798,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Validate that the given value match Names production</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>an Names value</td>
@@ -1828,8 +1819,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Validate that the given value match Nmtoken production [ VC: Name Token ]</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>an Nmtoken value</td>
@@ -1849,8 +1840,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Validate that the given value match Nmtokens production [ VC: Name Token ]</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>an Nmtokens value</td>
@@ -1870,8 +1861,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a single notation definition basically it does the following checks as described by the XML-1.0 recommendation: - it seems that no validity constraint exists on notation declarations But this function get called anyway ...</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1899,8 +1890,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Validate that the given name match a notation declaration. - [ VC: Notation Declared ]</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1928,8 +1919,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a single <a href="libxml2-SAX.html#attribute">attribute</a> for an element basically it does the following checks as described by the XML-1.0 recommendation: - [ VC: Attribute Value Type ] - [ VC: Fixed Attribute Default ] - [ VC: Entity Name ] - [ VC: Name Token ] - [ VC: ID ] - [ VC: IDREF ] - [ VC: Entity Name ] - [ VC: Notation Attributes ] The ID/IDREF uniqueness and matching are done separately</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1965,8 +1956,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a single element and it's attributes, basically it does the following checks as described by the XML-1.0 recommendation: - [ VC: Element Valid ] - [ VC: Required Attribute ] Then call xmlValidateOneAttribute() for each <a href="libxml2-SAX.html#attribute">attribute</a> present. The ID/IDREF checkings are done separately</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -1994,8 +1985,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a single namespace declaration for an element basically it does the following checks as described by the XML-1.0 recommendation: - [ VC: Attribute Value Type ] - [ VC: Fixed Attribute Default ] - [ VC: Entity Name ] - [ VC: Name Token ] - [ VC: ID ] - [ VC: IDREF ] - [ VC: Entity Name ] - [ VC: Notation Attributes ] The ID/IDREF uniqueness and matching are done separately</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -2035,8 +2026,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Pop the element end from the validation stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -2068,8 +2059,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. check the CData parsed for validation in the current stack</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -2097,8 +2088,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Push a new element start on the validation stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -2130,8 +2121,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, don't use. Try to validate a the root element basically it does the following check as described by the XML-1.0 recommendation: - [ VC: Root Element Type ] it doesn't try to recurse or apply other check to the element</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the validation context</td>
@@ -2150,7 +2141,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-valid.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-valid.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

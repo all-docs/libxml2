@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-threads.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-threads.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>threads: interfaces for thread handling</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-schematron.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-tree.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">threads</span></h2>
 <p>threads - interfaces for thread handling</p>
 <p>set of generic threading related routines should work with pthreads, Windows native or TLS threads </p>
@@ -93,8 +84,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check whether thread-local storage could be allocated. In cross-platform code running in multithreaded environments, this function should be called once in each thread before calling other library functions to make sure that thread-local storage was allocated properly.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>0 on success or -1 if a memory allocation failed. A failed allocation signals a typically fatal and irrecoverable out-of-memory situation. Don't call any library functions in this case. This function never fails if the library is compiled with support for thread-local storage. This function never fails for the "main" thread which is the first thread calling <a href="libxml2-parser.html#xmlInitParser">xmlInitParser</a>. Available since v2.12.0.</td>
 </tr></tbody>
@@ -116,8 +107,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a mutex.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>tok</tt></i>:</span></td>
 <td>the simple mutex</td>
 </tr></tbody>
@@ -131,8 +122,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlRFreeMutex() is used to reclaim resources associated with a reentrant mutex.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>tok</tt></i>:</span></td>
 <td>the reentrant mutex</td>
 </tr></tbody>
@@ -146,8 +137,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, do not use. xmlGetThreadId() find the current thread ID number Note that this is likely to be broken on some platforms using pthreads as the specification doesn't mandate pthread_t to be an integer type</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the current thread ID number</td>
 </tr></tbody>
@@ -169,8 +160,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Internal function, do not use. Check whether the current thread is the main thread.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>1 if the current thread is the main thread, 0 otherwise</td>
 </tr></tbody>
@@ -192,8 +183,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlMutexLock() is used to lock a libxml2 token.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>tok</tt></i>:</span></td>
 <td>the simple mutex</td>
 </tr></tbody>
@@ -207,8 +198,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlMutexUnlock() is used to unlock a libxml2 token.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>tok</tt></i>:</span></td>
 <td>the simple mutex</td>
 </tr></tbody>
@@ -222,8 +213,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlNewMutex() is used to allocate a libxml2 token struct for use in synchronizing access to data.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>a new simple mutex pointer or NULL in case of error</td>
 </tr></tbody>
@@ -237,8 +228,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlRNewMutex() is used to allocate a reentrant mutex for use in synchronizing access to data. token_r is a re-entrant lock and thus useful for synchronizing access to data structures that may be manipulated in a recursive fashion.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the new reentrant mutex pointer or NULL in case of error</td>
 </tr></tbody>
@@ -252,8 +243,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlRMutexLock() is used to lock a libxml2 token_r.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>tok</tt></i>:</span></td>
 <td>the reentrant mutex</td>
 </tr></tbody>
@@ -267,8 +258,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>xmlRMutexUnlock() is used to unlock a libxml2 token_r.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>tok</tt></i>:</span></td>
 <td>the reentrant mutex</td>
 </tr></tbody>
@@ -285,7 +276,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-threads.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-threads.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

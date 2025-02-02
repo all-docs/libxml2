@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-tree.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-tree.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>tree: interfaces for tree manipulation</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-threads.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-uri.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">tree</span></h2>
 <p>tree - interfaces for tree manipulation</p>
 <p>this module describes the structures found in an tree resulting from an XML or HTML parsing, as well as the API provided for various processing on that tree </p>
@@ -1190,8 +1181,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>A function called to acquire namespaces (xmlNs) from the wrapper.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>a DOM wrapper context</td>
@@ -1223,8 +1214,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Signature for the deregistration callback of a discarded node</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the current node</td>
 </tr></tbody>
@@ -1238,8 +1229,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Signature for the registration callback of a created node</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the current node</td>
 </tr></tbody>
@@ -1253,8 +1244,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlink @cur and append it to the children of @parent. If @cur is a text node, it may be merged with an adjacent text node and freed. In this case the text node containing the merged content is returned. If @cur is an <a href="libxml2-SAX.html#attribute">attribute</a> node, it is appended to the attributes of @parent. If the <a href="libxml2-SAX.html#attribute">attribute</a> list contains an <a href="libxml2-SAX.html#attribute">attribute</a> with a name matching @elem, the old <a href="libxml2-SAX.html#attribute">attribute</a> is destroyed. General notes: Move operations like <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a> can cause element or <a href="libxml2-SAX.html#attribute">attribute</a> nodes to <a href="libxml2-SAX.html#reference">reference</a> namespaces that aren't declared in one of their ancestors. This can lead to use-after-free errors if the elements containing the declarations are freed later, especially when moving nodes from one document to another. You should consider calling <a href="libxml2-tree.html#xmlReconciliateNs">xmlReconciliateNs</a> after a move operation to normalize namespaces. Another option is to call <a href="libxml2-tree.html#xmlDOMWrapAdoptNode">xmlDOMWrapAdoptNode</a> with the target parent before moving a node. For the most part, move operations don't check whether the resulting tree structure is valid. Users must make sure that parent nodes only receive children of valid types. Inserted child nodes must never be an ancestor of the parent node to avoid cycles in the tree structure. In general, only document, document fragments, elements and attributes should be used as parent nodes. When moving a node between documents and a memory allocation fails, the node's content will be corrupted and it will be unlinked. In this case, the node must be freed manually. Moving DTDs between documents isn't supported.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -1278,8 +1269,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Append a node list to another node. See <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -1303,8 +1294,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlinks @cur and inserts it as next sibling after @prev. Unlike <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a> this function does not merge text nodes. If @cur is an <a href="libxml2-SAX.html#attribute">attribute</a> node, it is inserted after <a href="libxml2-SAX.html#attribute">attribute</a> @prev. If the <a href="libxml2-SAX.html#attribute">attribute</a> list contains an <a href="libxml2-SAX.html#attribute">attribute</a> with a name matching @cur, the old <a href="libxml2-SAX.html#attribute">attribute</a> is destroyed. See the notes in <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>prev</tt></i>:</span></td>
 <td>the target node</td>
@@ -1328,8 +1319,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlinks @cur and inserts it as previous sibling before @next. Unlike <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a> this function does not merge text nodes. If @cur is an <a href="libxml2-SAX.html#attribute">attribute</a> node, it is inserted before <a href="libxml2-SAX.html#attribute">attribute</a> @next. If the <a href="libxml2-SAX.html#attribute">attribute</a> list contains an <a href="libxml2-SAX.html#attribute">attribute</a> with a name matching @cur, the old <a href="libxml2-SAX.html#attribute">attribute</a> is destroyed. See the notes in <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>next</tt></i>:</span></td>
 <td>the target node</td>
@@ -1353,8 +1344,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlinks @cur and inserts it as last sibling of @node. If @cur is a text node, it may be merged with an adjacent text node and freed. In this case the text node containing the merged content is returned. If @cur is an <a href="libxml2-SAX.html#attribute">attribute</a> node, it is appended to the <a href="libxml2-SAX.html#attribute">attribute</a> list containing @node. If the <a href="libxml2-SAX.html#attribute">attribute</a> list contains an <a href="libxml2-SAX.html#attribute">attribute</a> with a name matching @cur, the old <a href="libxml2-SAX.html#attribute">attribute</a> is destroyed. See the notes in <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the target node</td>
@@ -1378,8 +1369,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Serialize text <a href="libxml2-SAX.html#attribute">attribute</a> values to an xml simple buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -1407,8 +1398,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Function to extract the content of a buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1428,8 +1419,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Function to extract the end of the content of a buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1449,8 +1440,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Read the value of a node @cur, this can be either the text carried directly by this node if it's a TEXT node or the aggregate string of the values carried by this node child's (TEXT and ENTITY_REF). Entity references are substituted. Fills up the buffer @buf with this value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>a buffer <a href="libxml2-tree.html#xmlBufPtr">xmlBufPtr</a>
@@ -1475,8 +1466,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML node, recursive behaviour,children are printed too. Note that @format = 1 provide node indenting only if xmlIndentTreeOutput = 1 or xmlKeepBlanksDefault(0) was called</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -1512,8 +1503,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove the beginning of an XML buffer. NOTE that this routine behaviour differs from xmlBufferShrink() as it will return 0 on error instead of -1 due to size_t being used as the return type.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to dump</td>
@@ -1537,8 +1528,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Function to get the length of a buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1558,8 +1549,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a string range to an XML buffer. if len == -1, the length of str is recomputed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to dump</td>
@@ -1587,8 +1578,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a string range to the beginning of an XML buffer. if len == -1, the length of @str is recomputed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1616,8 +1607,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Append a zero terminated C string to an XML buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to dump</td>
@@ -1641,8 +1632,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Append a zero terminated string to an XML buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to add to</td>
@@ -1666,8 +1657,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Function to extract the content of a buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1687,8 +1678,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>routine to create an XML buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the new structure.</td>
 </tr></tbody>
@@ -1702,8 +1693,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>routine to create an XML buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>size</tt></i>:</span></td>
 <td>initial size of buffer</td>
@@ -1723,8 +1714,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>mem</tt></i>:</span></td>
 <td>the memory area</td>
@@ -1748,8 +1739,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove the string contained in a buffer and gie it back to the caller. The buffer is reset to an empty content. This doesn't work with immutable buffers as they can't be reset.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1769,8 +1760,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dumps an XML buffer to a FILE *.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>file</tt></i>:</span></td>
 <td>the file output</td>
@@ -1794,8 +1785,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>empty a buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
 </tr></tbody>
@@ -1809,8 +1800,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Frees an XML buffer. It frees both the content and the structure which encapsulate it.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to free</td>
 </tr></tbody>
@@ -1824,8 +1815,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Grow the available space of an XML buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1849,8 +1840,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Function to get the length of a buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer</td>
@@ -1870,8 +1861,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Resize a buffer to accommodate minimum size of @size.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to resize</td>
@@ -1895,8 +1886,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Sets the allocation scheme for this buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to tune</td>
@@ -1916,8 +1907,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove the beginning of an XML buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the buffer to dump</td>
@@ -1941,8 +1932,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>routine which manages and grows an output buffer. This one adds xmlChars at the end of the buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer</td>
@@ -1962,8 +1953,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>routine which manage and grows an output buffer. This one add C chars at the end of the array.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -1983,8 +1974,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>routine which manage and grows an output buffer. This one writes a quoted or double quoted #xmlChar string, checking first if it holds quote or double-quotes internally</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -2004,8 +1995,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Builds the QName @prefix:@ncname in @memory if there is enough space and prefix is not NULL nor empty, otherwise allocate a new string. If prefix is NULL or empty it returns ncname.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ncname</tt></i>:</span></td>
 <td>the Name</td>
@@ -2037,8 +2028,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Count the number of child nodes which are elements. Note that entity references are not expanded.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -2058,8 +2049,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a document. If recursive, the content tree will be copied too as well as DTD, namespaces and entities.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -2083,8 +2074,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a DTD.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dtd</tt></i>:</span></td>
 <td>the DTD</td>
@@ -2104,8 +2095,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a namespace.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the namespace</td>
@@ -2125,8 +2116,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a namespace list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the first namespace</td>
@@ -2146,8 +2137,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a node. Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlDocCopyNode">xmlDocCopyNode</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -2171,8 +2162,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a node list and all children. Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlDocCopyNodeList">xmlDocCopyNodeList</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the first node in the list.</td>
@@ -2192,8 +2183,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a copy of the <a href="libxml2-SAX.html#attribute">attribute</a>. This function sets the parent pointer of the copy to @target but doesn't set the <a href="libxml2-SAX.html#attribute">attribute</a> on the target element. Users should consider to set the <a href="libxml2-SAX.html#attribute">attribute</a> by calling <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a> afterwards or reset the parent pointer to NULL.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>target</tt></i>:</span></td>
 <td>the element where the <a href="libxml2-SAX.html#attribute">attribute</a> will be grafted</td>
@@ -2218,8 +2209,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a copy of an <a href="libxml2-SAX.html#attribute">attribute</a> list. This function sets the parent pointers of the copied attributes to @target but doesn't set the attributes on the target element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>target</tt></i>:</span></td>
 <td>the element where the attributes will be grafted</td>
@@ -2244,8 +2235,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a DTD node. If a document is provided and it already has an internal subset, the existing DTD object is returned without creating a new object. If the document has no internal subset, it will be set to the created DTD.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document pointer (optional)</td>
@@ -2277,8 +2268,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>References of out-of scope ns-decls are remapped to point to @destDoc: 1) If @destParent is given, then nsDef entries on element-nodes are used 2) If *no* @destParent is given, then @destDoc-&gt;oldNs entries are used This is the case when you have an unlinked node and just want to move it to the context of If @destParent is given, it ensures that the tree is namespace wellformed by creating additional ns-decls where needed. Note that, since prefixes of already existent ns-decls can be shadowed by this process, it could break QNames in <a href="libxml2-SAX.html#attribute">attribute</a> values or element content. NOTE: This function was not intensively tested.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the optional context for custom processing</td>
@@ -2318,8 +2309,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>References of out-of scope ns-decls are remapped to point to @destDoc: 1) If @destParent is given, then nsDef entries on element-nodes are used 2) If *no* @destParent is given, then @destDoc-&gt;oldNs entries are used. This is the case when you don't know already where the cloned branch will be added to. If @destParent is given, it ensures that the tree is namespace wellformed by creating additional ns-decls where needed. Note that, since prefixes of already existent ns-decls can be shadowed by this process, it could break QNames in <a href="libxml2-SAX.html#attribute">attribute</a> values or element content. TODO: 1) What to do with XInclude? Currently this returns an error for XInclude.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the optional context for custom processing</td>
@@ -2367,8 +2358,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Frees the DOM-wrapper context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the DOM-wrapper context</td>
 </tr></tbody>
@@ -2382,8 +2373,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Allocates and initializes a new DOM-wrapper context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the <a href="libxml2-tree.html#xmlDOMWrapCtxtPtr">xmlDOMWrapCtxtPtr</a> or NULL in case of an internal error.</td>
 </tr></tbody>
@@ -2397,8 +2388,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Ensures that ns-references point to ns-decls hold on element-nodes. Ensures that the tree is namespace wellformed by creating additional ns-decls where needed. Note that, since prefixes of already existent ns-decls can be shadowed by this process, it could break QNames in <a href="libxml2-SAX.html#attribute">attribute</a> values or element content. NOTE: This function was not intensively tested.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>DOM wrapper context, unused at the moment</td>
@@ -2426,8 +2417,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlinks the given node from its owner. This will substitute ns-references to node-&gt;nsDef for ns-references to doc-&gt;oldNs, thus ensuring the removed branch to be autark wrt ns-references. NOTE: This function was not intensively tested.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>a DOM wrapper context</td>
@@ -2459,8 +2450,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: don't use Registers a callback for node destruction</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td>function pointer to the new DeregisterNodeFunc</td>
@@ -2480,8 +2471,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a node into another document.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -2509,8 +2500,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy a node list and all children into a new document.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document</td>
@@ -2534,8 +2525,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to an open FILE.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>f</tt></i>:</span></td>
 <td>the FILE*</td>
@@ -2559,8 +2550,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document in memory and return the #xmlChar * and it's size. It's up to the caller to free the memory with xmlFree(). Note that @format = 1 provide node indenting only if xmlIndentTreeOutput = 1 or xmlKeepBlanksDefault(0) was called</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the document</td>
@@ -2588,8 +2579,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump the current DOM tree into memory using the character encoding specified by the caller. Note it is up to the caller of this function to free the allocated memory with xmlFree(). Note that @format = 1 provide node indenting only if xmlIndentTreeOutput = 1 or xmlKeepBlanksDefault(0) was called</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out_doc</tt></i>:</span></td>
 <td>Document to generate XML text from</td>
@@ -2621,8 +2612,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document in memory and return the #xmlChar * and it's size in bytes. It's up to the caller to free the memory with xmlFree(). The resulting byte array is zero terminated, though the last 0 is not included in the returned size.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the document</td>
@@ -2646,8 +2637,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump the current DOM tree into memory using the character encoding specified by the caller. Note it is up to the caller of this function to free the allocated memory with xmlFree().</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out_doc</tt></i>:</span></td>
 <td>Document to generate XML text from</td>
@@ -2675,8 +2666,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to an open FILE.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>f</tt></i>:</span></td>
 <td>the FILE*</td>
@@ -2704,8 +2695,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get the root element of the document (doc-&gt;children is a list containing possibly comments, PIs, etc ...).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -2725,8 +2716,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set the root element of the document (doc-&gt;children is a list containing possibly comments, PIs, etc ...). @root must be an element node. It is unlinked before insertion.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -2750,8 +2741,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML/HTML node, recursive behaviour, children are printed too.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>f</tt></i>:</span></td>
 <td>the FILE * for the output</td>
@@ -2775,8 +2766,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the first child node which is an element. Note that entity references are not expanded.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -2796,8 +2787,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a document including all children and associated DTDs.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>pointer to the document</td>
 </tr></tbody>
@@ -2811,8 +2802,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a DTD structure.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the DTD structure to free up</td>
 </tr></tbody>
@@ -2826,8 +2817,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a node including all the children. This doesn't unlink the node from the tree. Call <a href="libxml2-tree.html#xmlUnlinkNode">xmlUnlinkNode</a> first unless @cur is a root node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node</td>
 </tr></tbody>
@@ -2841,8 +2832,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a node list including all children.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the first node in the list</td>
 </tr></tbody>
@@ -2856,8 +2847,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free an <a href="libxml2-tree.html#xmlNs">xmlNs</a> object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the namespace pointer</td>
 </tr></tbody>
@@ -2871,8 +2862,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a list of <a href="libxml2-tree.html#xmlNs">xmlNs</a> objects.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the first namespace pointer</td>
 </tr></tbody>
@@ -2886,8 +2877,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free an <a href="libxml2-SAX.html#attribute">attribute</a> including all children.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>an <a href="libxml2-SAX.html#attribute">attribute</a>
 </td>
@@ -2902,8 +2893,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free an <a href="libxml2-SAX.html#attribute">attribute</a> list including all children.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the first <a href="libxml2-SAX.html#attribute">attribute</a> in the list</td>
 </tr></tbody>
@@ -2917,8 +2908,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Types are <a href="libxml2-tree.html#XML_BUFFER_ALLOC_EXACT">XML_BUFFER_ALLOC_EXACT</a> - use exact sizes, keeps memory usage down <a href="libxml2-tree.html#XML_BUFFER_ALLOC_DOUBLEIT">XML_BUFFER_ALLOC_DOUBLEIT</a> - double buffer when extra needed, improves performance <a href="libxml2-tree.html#XML_BUFFER_ALLOC_HYBRID">XML_BUFFER_ALLOC_HYBRID</a> - use exact sizes on small strings to keep memory usage tight in normal usage, and doubleit on large strings to avoid pathological performance.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the current allocation scheme</td>
 </tr></tbody>
@@ -2932,8 +2923,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-tree.html#xmlGetDocCompressMode">xmlGetDocCompressMode</a> get the default compression mode used, ZLIB based.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>0 (uncompressed) to 9 (max compression)</td>
 </tr></tbody>
@@ -2947,8 +2938,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>get the compression ratio for a document, ZLIB based</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -2968,8 +2959,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get the internal subset of a document.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document pointer</td>
@@ -2989,8 +2980,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the last child of a node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -3010,8 +3001,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get line number of @node. Try to override the limitation of lines being store in 16 bits ints if <a href="libxml2-parser.html#XML_PARSE_BIG_LINES">XML_PARSE_BIG_LINES</a> parser option was used</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>valid node</td>
@@ -3031,8 +3022,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search and get the value of an <a href="libxml2-SAX.html#attribute">attribute</a> associated to a node This does the entity substitution. This function looks in DTD <a href="libxml2-SAX.html#attribute">attribute</a> declaration for #FIXED or default declaration values. This function is similar to <a href="libxml2-tree.html#xmlGetProp">xmlGetProp</a> except it will accept only an <a href="libxml2-SAX.html#attribute">attribute</a> in no namespace. NOTE: This function doesn't allow to distinguish malloc failures from missing attributes. It's more robust to use <a href="libxml2-tree.html#xmlNodeGetAttrValue">xmlNodeGetAttrValue</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -3056,8 +3047,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a structure based Path for the given node</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>a node</td>
@@ -3077,8 +3068,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find all in-scope namespaces of a node. Use <a href="libxml2-tree.html#xmlGetNsListSafe">xmlGetNsListSafe</a> for better error reporting.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -3102,8 +3093,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find all in-scope namespaces of a node. @out returns a NULL terminated array of namespace pointers that must be freed by the caller. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -3131,8 +3122,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search and get the value of an <a href="libxml2-SAX.html#attribute">attribute</a> associated to a node This <a href="libxml2-SAX.html#attribute">attribute</a> has to be anchored in the namespace specified. This does the entity substitution. This function looks in DTD <a href="libxml2-SAX.html#attribute">attribute</a> declaration for #FIXED or default declaration values. NOTE: This function doesn't allow to distinguish malloc failures from missing attributes. It's more robust to use <a href="libxml2-tree.html#xmlNodeGetAttrValue">xmlNodeGetAttrValue</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -3160,8 +3151,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search and get the value of an <a href="libxml2-SAX.html#attribute">attribute</a> associated to a node This does the entity substitution. This function looks in DTD <a href="libxml2-SAX.html#attribute">attribute</a> declaration for #FIXED or default declaration values. NOTE: This function acts independently of namespaces associated to the <a href="libxml2-SAX.html#attribute">attribute</a>. Use xmlGetNsProp() or xmlGetNoNsProp() for namespace aware processing. NOTE: This function doesn't allow to distinguish malloc failures from missing attributes. It's more robust to use <a href="libxml2-tree.html#xmlNodeGetAttrValue">xmlNodeGetAttrValue</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -3185,8 +3176,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search for an <a href="libxml2-SAX.html#attribute">attribute</a> associated to a node This <a href="libxml2-SAX.html#attribute">attribute</a> has to be anchored in the namespace specified. This does the entity substitution. This function looks in DTD <a href="libxml2-SAX.html#attribute">attribute</a> declaration for #FIXED or default declaration values. Note that a namespace of NULL indicates to use the default namespace.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -3214,8 +3205,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search an <a href="libxml2-SAX.html#attribute">attribute</a> associated to a node This function also looks in DTD <a href="libxml2-SAX.html#attribute">attribute</a> declaration for #FIXED or default declaration values.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -3239,8 +3230,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Checks whether this node is an empty or whitespace only (and possibly ignorable) text-node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -3260,8 +3251,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Try to find if the document correspond to an XHTML DTD</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>systemID</tt></i>:</span></td>
 <td>the system identifier</td>
@@ -3285,8 +3276,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the last child node which is an element. Note that entity references are not expanded.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -3306,8 +3297,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a CDATA section node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document (optional)</td>
@@ -3335,8 +3326,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This function is MISNAMED. It doesn't create a character <a href="libxml2-SAX.html#reference">reference</a> but an entity <a href="libxml2-SAX.html#reference">reference</a>. Create an empty entity <a href="libxml2-SAX.html#reference">reference</a> node. This function doesn't attempt to look up the entity in @doc. Entity names like '&amp;entity;' are handled as well.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document (optional)</td>
@@ -3360,8 +3351,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new child element and append it to a parent element. If @ns is NULL, the newly created element inherits the namespace of the parent. If provided, @content is expected to be a valid XML <a href="libxml2-SAX.html#attribute">attribute</a> value possibly containing character and entity references. Text and entity <a href="libxml2-SAX.html#reference">reference</a> node will be added to the child element, see <a href="libxml2-tree.html#xmlNewDocNode">xmlNewDocNode</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -3393,8 +3384,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlNewDocComment">xmlNewDocComment</a>. Create a <a href="libxml2-SAX.html#comment">comment</a> node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>content</tt></i>:</span></td>
 <td>the <a href="libxml2-SAX.html#comment">comment</a> content (optional)</td>
@@ -3414,8 +3405,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Creates a new XML document. If version is NULL, "1.0" is used.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>version</tt></i>:</span></td>
 <td>XML version string like "1.0" (optional)</td>
@@ -3435,8 +3426,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a <a href="libxml2-SAX.html#comment">comment</a> node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -3460,8 +3451,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a document fragment node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document (optional)</td>
@@ -3481,8 +3472,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an element node. If provided, @content is expected to be a valid XML <a href="libxml2-SAX.html#attribute">attribute</a> value possibly containing character and entity references. Syntax errors and references to undeclared entities are ignored silently. Only references are handled, nested elements, comments or PIs are not. See <a href="libxml2-tree.html#xmlNewDocRawNode">xmlNewDocRawNode</a> for an alternative. General notes on object creation: Each node and all its children are associated with the same document. The document should be provided when creating nodes to avoid a performance penalty when adding the node to a document tree. Note that a document only owns nodes reachable from the root node. Unlinked subtrees must be freed manually.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document</td>
@@ -3514,8 +3505,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an element node. Like xmlNewDocNode, but the @name string will be used directly without making a copy. Takes ownership of @name which will also be freed on error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document</td>
@@ -3547,8 +3538,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a processing instruction object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document (optional)</td>
@@ -3576,8 +3567,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an <a href="libxml2-SAX.html#attribute">attribute</a> object. If provided, @value is expected to be a valid XML <a href="libxml2-SAX.html#attribute">attribute</a> value possibly containing character and entity references. Syntax errors and references to undeclared entities are ignored silently. If you want to pass a raw string, see <a href="libxml2-tree.html#xmlNewProp">xmlNewProp</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document (optional)</td>
@@ -3607,8 +3598,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an element node. If provided, @value should be a raw, unescaped string.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document</td>
@@ -3640,8 +3631,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new text node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document</td>
@@ -3665,8 +3656,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new text node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document</td>
@@ -3694,8 +3685,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a DTD node. If a document is provided, it is an error if it already has an external subset. If the document has no external subset, it will be set to the created DTD. To create an internal subset, use xmlCreateIntSubset().</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document pointer (optional)</td>
@@ -3727,8 +3718,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Creation of a Namespace, the old way using PI and without scoping DEPRECATED !!!</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document carrying the namespace</td>
@@ -3756,8 +3747,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an element node. Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlNewDocNode">xmlNewDocNode</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>namespace (optional)</td>
@@ -3781,8 +3772,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an element node. Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlNewDocNodeEatName">xmlNewDocNodeEatName</a>. Like xmlNewNode, but the @name string will be used directly without making a copy. Takes ownership of @name which will also be freed on error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>namespace (optional)</td>
@@ -3806,8 +3797,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new namespace. For a default namespace, @prefix should be NULL. The namespace URI in @href is not checked. You should make sure to pass a valid URI. If @node is provided, it must be an element node. The namespace will be appended to the node's namespace declarations. It is an error if the node already has a definition for the prefix or default namespace.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the element carrying the namespace (optional)</td>
@@ -3835,8 +3826,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an <a href="libxml2-SAX.html#attribute">attribute</a> object. If provided, @value should be a raw, unescaped string. If @node is provided, the created <a href="libxml2-SAX.html#attribute">attribute</a> will be appended without checking for duplicate names. It is an error if @node is not an element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the parent node (optional)</td>
@@ -3869,8 +3860,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Like xmlNewNsProp, but the @name string will be used directly without making a copy. Takes ownership of @name which will also be freed on error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the parent node (optional)</td>
@@ -3903,8 +3894,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a processing instruction node. Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlNewDocPI">xmlNewDocPI</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>the processing instruction target</td>
@@ -3928,8 +3919,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an <a href="libxml2-SAX.html#attribute">attribute</a> node. If provided, @value should be a raw, unescaped string. If @node is provided, the created <a href="libxml2-SAX.html#attribute">attribute</a> will be appended without checking for duplicate names. It is an error if @node is not an element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the parent node (optional)</td>
@@ -3958,8 +3949,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new entity <a href="libxml2-SAX.html#reference">reference</a> node, linking the result with the entity in @doc if found. Entity names like '&amp;entity;' are handled as well.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the target document (optional)</td>
@@ -3983,8 +3974,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a text node. Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlNewDocText">xmlNewDocText</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>content</tt></i>:</span></td>
 <td>raw text content (optional)</td>
@@ -4004,8 +3995,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new child element and append it to a parent element. If @ns is NULL, the newly created element inherits the namespace of the parent. If @content is provided, a text node will be added to the child element, see <a href="libxml2-tree.html#xmlNewDocRawNode">xmlNewDocRawNode</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>parent</tt></i>:</span></td>
 <td>the parent node</td>
@@ -4037,8 +4028,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Use of this function is DISCOURAGED in favor of <a href="libxml2-tree.html#xmlNewDocTextLen">xmlNewDocTextLen</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>content</tt></i>:</span></td>
 <td>raw text content (optional)</td>
@@ -4062,8 +4053,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the closest following sibling which is a element. Note that entity references are not expanded.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the current node</td>
@@ -4083,8 +4074,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Append the extra substring to the node content. NOTE: In contrast to xmlNodeSetContent(), @content is supposed to be raw text, so unescaped XML special chars are allowed, entity references are not supported.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being modified</td>
@@ -4108,8 +4099,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Append the extra substring to the node content. NOTE: In contrast to xmlNodeSetContentLen(), @content is supposed to be raw text, so unescaped XML special chars are allowed, entity references are not supported.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being modified</td>
@@ -4137,8 +4128,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Read the value of a node @cur, this can be either the text carried directly by this node if it's a TEXT node or the aggregate string of the values carried by this node child's (TEXT and ENTITY_REF). Entity references are substituted. Fills up the buffer @buffer with this value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buffer</tt></i>:</span></td>
 <td>a buffer</td>
@@ -4162,8 +4153,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML node, recursive behaviour,children are printed too. Note that @format = 1 provide node indenting only if xmlIndentTreeOutput = 1 or xmlKeepBlanksDefault(0) was called. Since this is using <a href="libxml2-tree.html#xmlBuffer">xmlBuffer</a> structures it is limited to 2GB and somehow deprecated, use xmlNodeDumpOutput() instead.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -4199,8 +4190,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML node, recursive behaviour, children are printed too. Note that @format = 1 provide node indenting only if xmlIndentTreeOutput = 1 or xmlKeepBlanksDefault(0) was called</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the XML buffer output</td>
@@ -4236,8 +4227,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search and get the value of an <a href="libxml2-SAX.html#attribute">attribute</a> associated to a node This <a href="libxml2-SAX.html#attribute">attribute</a> has to be anchored in the namespace specified. This does the entity substitution. The returned value must be freed by the caller. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -4269,8 +4260,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>See <a href="libxml2-tree.html#xmlNodeGetBaseSafe">xmlNodeGetBaseSafe</a>. This function doesn't allow to distinguish memory allocation failures from a non-existing base.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document the node pertains to</td>
@@ -4294,8 +4285,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Searches for the BASE URL. The code should work on both XML and HTML document even if base mechanisms are completely different. It returns the base as defined in RFC 2396 sections 5.1.1. Base URI within Document Content and 5.1.2. Base URI from the Encapsulating Entity However it does not return the document base (5.1.3), use doc-&gt;URL in this case Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document the node pertains to</td>
@@ -4323,8 +4314,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Read the value of a node, this can be either the text carried directly by this node if it's a TEXT node or the aggregate string of the values carried by this node child's (TEXT and ENTITY_REF). Entity references are substituted.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being read</td>
@@ -4344,8 +4335,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Searches the language of a node, i.e. the values of the xml:lang <a href="libxml2-SAX.html#attribute">attribute</a> or the one carried by the nearest ancestor.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being checked</td>
@@ -4365,8 +4356,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Searches the space preserving behaviour of a node, i.e. the values of the xml:space <a href="libxml2-SAX.html#attribute">attribute</a> or the one carried by the nearest ancestor.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being checked</td>
@@ -4386,8 +4377,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Is this node a Text node ?</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -4407,8 +4398,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Serializes <a href="libxml2-SAX.html#attribute">attribute</a> children (text and entity <a href="libxml2-SAX.html#reference">reference</a> nodes) into a string. An empty list produces an empty string. If @inLine is true, entity references will be substituted. Otherwise, entity references will be kept and special <a href="libxml2-SAX.html#characters">characters</a> like '&amp;' will be escaped.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>a document (optional)</td>
@@ -4436,8 +4427,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Serializes <a href="libxml2-SAX.html#attribute">attribute</a> children (text and entity <a href="libxml2-SAX.html#reference">reference</a> nodes) into a string. An empty list produces an empty string. If @inLine is true, entity references will be substituted. Otherwise, entity references will be kept and special <a href="libxml2-SAX.html#characters">characters</a> like '&amp;' as well as non-ASCII chars will be escaped. See <a href="libxml2-tree.html#xmlNodeListGetRawString">xmlNodeListGetRawString</a> for an alternative option.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>a document (optional)</td>
@@ -4465,8 +4456,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set (or reset) the base URI of a node, i.e. the value of the xml:base <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being changed</td>
@@ -4490,8 +4481,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Replace the text content of a node. Sets the raw text content of text, CDATA, <a href="libxml2-SAX.html#comment">comment</a> or PI nodes. For element and <a href="libxml2-SAX.html#attribute">attribute</a> nodes, removes all children and replaces them by parsing @content which is expected to be a valid XML <a href="libxml2-SAX.html#attribute">attribute</a> value possibly containing character and entity references. Syntax errors and references to undeclared entities are ignored silently. Unfortunately, there isn't an API to pass raw content directly. An inefficient work-around is to escape the content with <a href="libxml2-entities.html#xmlEncodeSpecialChars">xmlEncodeSpecialChars</a> before passing it. A better trick is clearing the old content with xmlNodeSetContent(node, NULL) first and then calling xmlNodeAddContent(node, content). Unlike this function, <a href="libxml2-tree.html#xmlNodeAddContent">xmlNodeAddContent</a> accepts raw text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being modified</td>
@@ -4515,8 +4506,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>See <a href="libxml2-tree.html#xmlNodeSetContent">xmlNodeSetContent</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being modified</td>
@@ -4544,8 +4535,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set the language of a node, i.e. the values of the xml:lang <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being changed</td>
@@ -4569,8 +4560,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set (or reset) the name of a node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being changed</td>
@@ -4590,8 +4581,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set (or reset) the space preserving behaviour of a node, i.e. the value of the xml:space <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node being changed</td>
@@ -4615,8 +4606,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the closest preceding sibling which is a element. Note that entity references are not expanded.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the current node</td>
@@ -4636,8 +4627,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This function checks that all the namespaces declared within the given tree are properly declared. This is needed for example after Copy or Cut and then paste operations. The subtree may still hold pointers to namespace declarations outside the subtree or invalid/masked. As much as possible the function try to reuse the existing namespaces found in the new environment. If not possible the new namespaces are redeclared on @tree at the top of the given subtree.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -4661,8 +4652,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: don't use Registers a callback for node creation</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td>function pointer to the new RegisterNodeFunc</td>
@@ -4682,8 +4673,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlink and free an <a href="libxml2-SAX.html#attribute">attribute</a> including all children. Note this doesn't work for namespace declarations. The <a href="libxml2-SAX.html#attribute">attribute</a> must have a non-NULL parent pointer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>an <a href="libxml2-SAX.html#attribute">attribute</a>
@@ -4704,8 +4695,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlink the old node. If @cur is provided, it is unlinked and inserted in place of @old. It is an error if @old has no parent. Unlike xmlAddChild, this function doesn't merge text nodes or delete duplicate attributes. See the notes in <a href="libxml2-tree.html#xmlAddChild">xmlAddChild</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>old</tt></i>:</span></td>
 <td>the old node</td>
@@ -4729,8 +4720,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to a file. Will use compression if compiled in and enabled. If @filename is "-" the stdout file is used.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename (or URL)</td>
@@ -4754,8 +4745,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document, converting it to the given encoding</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename (or URL)</td>
@@ -4783,8 +4774,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to an I/O buffer. Warning ! This call xmlOutputBufferClose() on buf which is not available after this call.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>an output I/O buffer</td>
@@ -4812,8 +4803,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to a file. Will use compression if compiled in and enabled. If @filename is "-" the stdout file is used. If @format is set then the document will be indented on output. Note that @format = 1 provide node indenting only if xmlIndentTreeOutput = 1 or xmlKeepBlanksDefault(0) was called</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename (or URL)</td>
@@ -4841,8 +4832,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to a file or an URL.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename or URL to output</td>
@@ -4874,8 +4865,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dump an XML document to an I/O buffer. Warning ! This call xmlOutputBufferClose() on buf which is not available after this call.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>an output I/O buffer</td>
@@ -4907,8 +4898,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search a Ns registered under a given name space for a document. recurse on the parents until it finds the defined namespace or return NULL otherwise. @nameSpace can be NULL, this is a search for the default namespace. We don't allow to cross entities boundaries. If you don't declare the namespace within those you will be in troubles !!! A warning is generated to cover this case.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -4936,8 +4927,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Search a Ns aliasing a given URI. Recurse on the parents until it finds the defined namespace or return NULL otherwise.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -4965,8 +4956,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set the buffer allocation method. Types are <a href="libxml2-tree.html#XML_BUFFER_ALLOC_EXACT">XML_BUFFER_ALLOC_EXACT</a> - use exact sizes, keeps memory usage down <a href="libxml2-tree.html#XML_BUFFER_ALLOC_DOUBLEIT">XML_BUFFER_ALLOC_DOUBLEIT</a> - double buffer when extra needed, improves performance</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>scheme</tt></i>:</span></td>
 <td>allocation method to use</td>
 </tr></tbody>
@@ -4980,8 +4971,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-tree.html#xmlSetDocCompressMode">xmlSetDocCompressMode</a> set the default compression mode used, ZLIB based Correct values: 0 (uncompressed) to 9 (max compression)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>mode</tt></i>:</span></td>
 <td>the compression ratio</td>
 </tr></tbody>
@@ -4995,8 +4986,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>set the compression ratio for a document, ZLIB based Correct values: 0 (uncompressed) to 9 (max compression)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -5016,8 +5007,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Associate all subtrees in @list with a new document. Internal function, see <a href="libxml2-tree.html#xmlSetTreeDoc">xmlSetTreeDoc</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>list</tt></i>:</span></td>
 <td>a node list</td>
@@ -5041,8 +5032,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set the namespace of an element or <a href="libxml2-SAX.html#attribute">attribute</a> node. Passing a NULL namespace unsets the namespace.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>a node in the document</td>
@@ -5062,8 +5053,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set (or reset) an <a href="libxml2-SAX.html#attribute">attribute</a> carried by a node. The ns structure must be in scope, this is not checked</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -5095,8 +5086,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set (or reset) an <a href="libxml2-SAX.html#attribute">attribute</a> carried by a node. If @name has a prefix, then the corresponding namespace-binding will be used, if in scope; it is an error it there's no such ns-binding for the prefix in scope.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -5124,8 +5115,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This is an internal function which shouldn't be used. It is invoked by functions like xmlAddChild, <a href="libxml2-tree.html#xmlAddSibling">xmlAddSibling</a> or <a href="libxml2-tree.html#xmlReplaceNode">xmlReplaceNode</a>. @tree must be the root node of an unlinked subtree. Associate all nodes in a tree with a new document. Also copy strings from the old document's dictionary and remove ID attributes from the old ID table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>tree</tt></i>:</span></td>
 <td>root of a subtree</td>
@@ -5149,8 +5140,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: This function doesn't report malloc failures. parse an XML qualified name string [NS 5] QName ::= (Prefix ':')? LocalPart [NS 6] Prefix ::= NCName [NS 7] LocalPart ::= NCName</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>the full QName</td>
@@ -5174,8 +5165,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>parse an XML qualified name string,i</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>the full QName</td>
@@ -5199,8 +5190,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-tree.html#xmlNodeSetContent">xmlNodeSetContent</a>. Parse an <a href="libxml2-SAX.html#attribute">attribute</a> value and build a node list containing only text and entity <a href="libxml2-SAX.html#reference">reference</a> nodes. The resulting nodes will be associated with the document if provided. The document is also used to look up entities. The input is not validated. Syntax errors or references to undeclared entities will be ignored silently with unspecified results.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>a document (optional)</td>
@@ -5224,8 +5215,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-tree.html#xmlNodeSetContentLen">xmlNodeSetContentLen</a>. See <a href="libxml2-tree.html#xmlStringGetNodeList">xmlStringGetNodeList</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>a document (optional)</td>
@@ -5253,8 +5244,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Concat the given string at the end of the existing node content. If @len is -1, the string length will be calculated.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -5282,8 +5273,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Merge the second text node into the first. The second node is unlinked and freed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>first</tt></i>:</span></td>
 <td>the first text node</td>
@@ -5307,8 +5298,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>v</tt></i>:</span></td>
 <td></td>
@@ -5328,8 +5319,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>v</tt></i>:</span></td>
 <td></td>
@@ -5349,8 +5340,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td></td>
@@ -5370,8 +5361,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td></td>
@@ -5391,8 +5382,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Unlink a node from its tree. The node is not freed. Unless it is reinserted, it must be managed manually and freed eventually by calling <a href="libxml2-tree.html#xmlFreeNode">xmlFreeNode</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node</td>
 </tr></tbody>
@@ -5406,8 +5397,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove an <a href="libxml2-SAX.html#attribute">attribute</a> carried by a node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -5435,8 +5426,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove an <a href="libxml2-SAX.html#attribute">attribute</a> carried by a node. This handles only attributes in no namespace.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node</td>
@@ -5460,8 +5451,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check that a value conforms to the lexical space of NCName</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>the value to check</td>
@@ -5485,8 +5476,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check that a value conforms to the lexical space of NMToken</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>the value to check</td>
@@ -5510,8 +5501,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check that a value conforms to the lexical space of Name</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>the value to check</td>
@@ -5535,8 +5526,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check that a value conforms to the lexical space of QName</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>value</tt></i>:</span></td>
 <td>the value to check</td>
@@ -5555,7 +5546,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-tree.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-tree.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

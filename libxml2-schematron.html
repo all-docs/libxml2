@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-schematron.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-schematron.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>schematron: XML Schematron implementation</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-schemasInternals.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-threads.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">schematron</span></h2>
 <p>schematron - XML Schematron implementation</p>
 <p>interface to the XML Schematron validity checking. </p>
@@ -127,8 +118,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Signature of an error callback from a Schematron validation</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>the validation context</td>
@@ -152,8 +143,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Signature of a warning callback from a Schematron validation</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>the validation context</td>
@@ -177,8 +168,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate a Schematron structure.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>schema</tt></i>:</span></td>
 <td>a schema structure</td>
 </tr></tbody>
@@ -192,8 +183,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free the resources associated to the schema parser context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the schema parser context</td>
 </tr></tbody>
@@ -207,8 +198,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free the resources associated to the schema validation context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the schema validation context</td>
 </tr></tbody>
@@ -222,8 +213,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an XML Schematrons parse context for that document. NB. The document may be modified during the parsing process.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>a preparsed document tree</td>
@@ -243,8 +234,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an XML Schematrons parse context for that memory buffer expected to contain an XML Schematrons file.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buffer</tt></i>:</span></td>
 <td>a pointer to a char array containing the schemas</td>
@@ -268,8 +259,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an XML Schematrons parse context for that file/resource expected to contain an XML Schematrons file.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URL</tt></i>:</span></td>
 <td>the location of the schema</td>
@@ -289,8 +280,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create an XML Schematrons validation context based on the given schema.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>schema</tt></i>:</span></td>
 <td>a precompiled XML Schematrons</td>
@@ -315,8 +306,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>parse a schema definition resource and build an internal XML Schema structure which can be used to validate instances.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>a schema validation context</td>
@@ -336,8 +327,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set the structured error callback</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>a Schematron validation context</td>
@@ -361,8 +352,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Validate a tree instance against the schematron</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the schema validation context</td>
@@ -381,7 +372,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-schematron.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-schematron.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-dict.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-dict.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>dict: string dictionary</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-debugXML.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-encoding.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">dict</span></h2>
 <p>dict - string dictionary</p>
 <p>dictionary of reusable strings, just used to avoid allocation and freeing operations. </p>
@@ -79,8 +70,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new dictionary</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the newly created dictionary, or NULL if an error occurred.</td>
 </tr></tbody>
@@ -94,8 +85,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new dictionary, inheriting strings from the read-only dictionary @sub. On lookup, strings are first searched in the new dictionary, then in @sub, and if not found are created in the new dictionary.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>sub</tt></i>:</span></td>
 <td>an existing dictionary</td>
@@ -115,8 +106,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check if a string exists in the dictionary.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -144,8 +135,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free the hash @dict and its contents. The userdata is deallocated with @f if provided.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
 </tr></tbody>
@@ -159,8 +150,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get how much memory is used by a dictionary for strings Added in 2.9.0</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -180,8 +171,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Lookup a string and add it to the dictionary if it wasn't found.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>dictionary</td>
@@ -209,8 +200,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>check if a string is owned by the dictionary</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -234,8 +225,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Lookup the QName @prefix:@name and add it to the dictionary if it wasn't found.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -263,8 +254,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Increment the <a href="libxml2-SAX.html#reference">reference</a> counter of a dictionary</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -284,8 +275,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set a size limit for the dictionary Added in 2.9.0</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -309,8 +300,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Query the number of elements installed in the hash @dict.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>dict</tt></i>:</span></td>
 <td>the dictionary</td>
@@ -330,8 +321,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Alias for <a href="libxml2-parser.html#xmlInitParser">xmlInitParser</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>0.</td>
 </tr></tbody>
@@ -340,7 +331,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-dict.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-dict.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

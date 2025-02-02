@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlIO.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlIO.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xmlIO: interface for the I/O interfaces used by the parser</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xlink.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xmlautomata.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xmlIO</span></h2>
 <p>xmlIO - interface for the I/O interfaces used by the parser</p>
 <p>interface for the I/O interfaces used by the parser </p>
@@ -103,8 +94,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Input API to close the resource</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>an Input context</td>
@@ -124,8 +115,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Input API to detect if the current handler can provide input functionality for this resource.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename or URI</td>
@@ -145,8 +136,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Input API to open the resource</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename or URI</td>
@@ -166,8 +157,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Input API to read the resource</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>an Input context</td>
@@ -195,8 +186,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Signature for the function doing the lookup for a suitable output method corresponding to an URI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>the URI to write to</td>
@@ -224,8 +215,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Output API to close the resource</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>an Output context</td>
@@ -245,8 +236,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Output API to detect if the current handler can provide output functionality for this resource.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename or URI</td>
@@ -266,8 +257,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Output API to open the resource</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the filename or URI</td>
@@ -287,8 +278,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Callback used in the I/O Output API to write to the resource</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>an Output context</td>
@@ -316,8 +307,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Signature for the function doing the lookup for a suitable input method corresponding to an URI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>the URI to read from</td>
@@ -341,8 +332,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered parser output</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>encoder</tt></i>:</span></td>
 <td>the encoding converter or NULL</td>
@@ -362,8 +353,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered parser input for progressive parsing. The encoding argument is deprecated and should be set to <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a>. The encoding can be changed with <a href="libxml2-parserInternals.html#xmlSwitchEncoding">xmlSwitchEncoding</a> or <a href="libxml2-parserInternals.html#xmlSwitchEncodingName">xmlSwitchEncodingName</a> later on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>enc</tt></i>:</span></td>
 <td>the charset encoding if known (deprecated)</td>
@@ -383,8 +374,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. if stat is not available on the target machine,</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>path</tt></i>:</span></td>
 <td>the path to check</td>
@@ -404,8 +395,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. Check an input in case it was created from an HTTP stream, in that case it will handle encoding and update of the base URL in case of redirection. It also checks for HTTP errors in which case the input is cleanly freed up and an appropriate error is raised in context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XML parser context</td>
@@ -445,8 +436,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>the I/O context</td>
@@ -466,8 +457,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the URI for matching</td>
@@ -487,8 +478,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the URI for matching</td>
@@ -508,8 +499,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>the I/O context</td>
@@ -537,8 +528,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Free up the memory used by a buffered parser input</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>in</tt></i>:</span></td>
 <td>a buffered parser input</td>
 </tr></tbody>
@@ -552,8 +543,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. Close an FTP I/O channel</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>the I/O context</td>
@@ -573,8 +564,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. check if the URI matches an FTP one</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the URI for matching</td>
@@ -594,8 +585,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. open an FTP I/O channel</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the URI for matching</td>
@@ -615,8 +606,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. Read @len bytes to @buffer from the I/O channel.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>the I/O context</td>
@@ -644,8 +635,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. Close an HTTP I/O channel</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>the I/O context</td>
@@ -665,8 +656,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. check if the URI matches an HTTP one</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the URI for matching</td>
@@ -686,8 +677,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. open an HTTP I/O channel</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the URI for matching</td>
@@ -707,8 +698,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Support for HTTP POST has been removed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>post_uri</tt></i>:</span></td>
 <td>The destination URI for the document</td>
@@ -732,8 +723,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: Internal function, don't use. Read @len bytes to @buffer from the I/O channel.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>context</tt></i>:</span></td>
 <td>the I/O context</td>
@@ -761,8 +752,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>A specific entity loader disabling network accesses, though still allowing local catalog accesses for resolution.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URL</tt></i>:</span></td>
 <td>the URL for the entity to load</td>
@@ -790,8 +781,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>DEPRECATED: This never really worked.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>path</tt></i>:</span></td>
 <td>the input file path</td>
@@ -811,8 +802,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>flushes and close the output I/O channel and free up all the associated resources</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>a buffered output</td>
@@ -832,8 +823,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered output for the progressive saving to a <a href="libxml2-tree.html#xmlBuffer">xmlBuffer</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buffer</tt></i>:</span></td>
 <td>a <a href="libxml2-tree.html#xmlBufferPtr">xmlBufferPtr</a>
@@ -858,8 +849,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered output for the progressive saving to a file descriptor</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>fd</tt></i>:</span></td>
 <td>a file descriptor number</td>
@@ -883,8 +874,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered output for the progressive saving to a FILE * buffered C I/O</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>file</tt></i>:</span></td>
 <td>a FILE*</td>
@@ -908,8 +899,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered output for the progressive saving of a file If filename is "-' then we use stdout as the output. Automatic support for ZLIB/Compress compressed document is provided by default if found at compile-time. TODO: currently if compression is set, the library only support writing to a local file.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>a C string containing the URI or filename</td>
@@ -937,8 +928,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Registers a callback for URI output file handling</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td>function pointer to the new OutputBufferCreateFilenameFunc</td>
@@ -958,8 +949,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered output for the progressive saving to an I/O handler</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>iowrite</tt></i>:</span></td>
 <td>an I/O write function</td>
@@ -991,8 +982,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>flushes the output I/O channel</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>a buffered output</td>
@@ -1012,8 +1003,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Gives a pointer to the data currently held in the output buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>an <a href="libxml2-tree.html#xmlOutputBufferPtr">xmlOutputBufferPtr</a>
@@ -1034,8 +1025,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Gives the length of the data currently held in the output buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>an <a href="libxml2-tree.html#xmlOutputBufferPtr">xmlOutputBufferPtr</a>
@@ -1056,8 +1047,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Write the content of the array in the output I/O buffer This routine handle the I18N transcoding from internal UTF-8 The buffer is lossless, i.e. will store in case of partial or delayed writes.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>a buffered parser output</td>
@@ -1085,8 +1076,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Write the content of the string in the output I/O buffer This routine escapes the <a href="libxml2-SAX.html#characters">characters</a> and then handle the I18N transcoding from internal UTF-8 The buffer is lossless, i.e. will store in case of partial or delayed writes.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>a buffered parser output</td>
@@ -1114,8 +1105,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Write the content of the string in the output I/O buffer This routine handle the I18N transcoding from internal UTF-8 The buffer is lossless, i.e. will store in case of partial or delayed writes.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>a buffered parser output</td>
@@ -1139,8 +1130,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>lookup the directory for that file</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>filename</tt></i>:</span></td>
 <td>the path to a file</td>
@@ -1160,8 +1151,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered parser input for the progressive parsing for the input from a file descriptor The encoding argument is deprecated and should be set to <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a>. The encoding can be changed with <a href="libxml2-parserInternals.html#xmlSwitchEncoding">xmlSwitchEncoding</a> or <a href="libxml2-parserInternals.html#xmlSwitchEncodingName">xmlSwitchEncodingName</a> later on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>fd</tt></i>:</span></td>
 <td>a file descriptor number</td>
@@ -1185,8 +1176,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered parser input for the progressive parsing of a FILE * buffered C I/O The encoding argument is deprecated and should be set to <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a>. The encoding can be changed with <a href="libxml2-parserInternals.html#xmlSwitchEncoding">xmlSwitchEncoding</a> or <a href="libxml2-parserInternals.html#xmlSwitchEncodingName">xmlSwitchEncodingName</a> later on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>file</tt></i>:</span></td>
 <td>a FILE*</td>
@@ -1210,8 +1201,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered parser input for the progressive parsing of a file Automatic support for ZLIB/Compress compressed document is provided by default if found at compile-time. Do an encoding check if enc == <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>a C string containing the URI or filename</td>
@@ -1235,8 +1226,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Registers a callback for URI input file handling</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td>function pointer to the new ParserInputBufferCreateFilenameFunc</td>
@@ -1256,8 +1247,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a buffered parser input for the progressive parsing for the input from an I/O handler The encoding argument is deprecated and should be set to <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a>. The encoding can be changed with <a href="libxml2-parserInternals.html#xmlSwitchEncoding">xmlSwitchEncoding</a> or <a href="libxml2-parserInternals.html#xmlSwitchEncodingName">xmlSwitchEncodingName</a> later on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ioread</tt></i>:</span></td>
 <td>an I/O read function</td>
@@ -1289,8 +1280,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a parser input buffer for parsing from a memory area. This function makes a copy of the whole input buffer. If you are sure that the contents of the buffer will remain valid until the document was parsed, you can avoid the copy by using <a href="libxml2-xmlIO.html#xmlParserInputBufferCreateStatic">xmlParserInputBufferCreateStatic</a>. The encoding argument is deprecated and should be set to <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a>. The encoding can be changed with <a href="libxml2-parserInternals.html#xmlSwitchEncoding">xmlSwitchEncoding</a> or <a href="libxml2-parserInternals.html#xmlSwitchEncodingName">xmlSwitchEncodingName</a> later on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>mem</tt></i>:</span></td>
 <td>the memory input</td>
@@ -1318,8 +1309,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Create a parser input buffer for parsing from a memory area. This functions assumes that the contents of the input buffer remain valid until the document was parsed. Use <a href="libxml2-xmlIO.html#xmlParserInputBufferCreateMem">xmlParserInputBufferCreateMem</a> otherwise. The encoding argument is deprecated and should be set to <a href="libxml2-encoding.html#XML_CHAR_ENCODING_NONE">XML_CHAR_ENCODING_NONE</a>. The encoding can be changed with <a href="libxml2-parserInternals.html#xmlSwitchEncoding">xmlSwitchEncoding</a> or <a href="libxml2-parserInternals.html#xmlSwitchEncodingName">xmlSwitchEncodingName</a> later on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>mem</tt></i>:</span></td>
 <td>the memory input</td>
@@ -1347,8 +1338,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Grow up the content of the input buffer, the old data are preserved This routine handle the I18N transcoding to internal UTF-8 This routine is used when operating the parser in normal (pull) mode TODO: one should be able to remove one extra copy by copying directly onto in-&gt;buffer or in-&gt;raw</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>in</tt></i>:</span></td>
 <td>a buffered parser input</td>
@@ -1372,8 +1363,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Push the content of the arry in the input buffer This routine handle the I18N transcoding to internal UTF-8 This is used when operating the parser in progressive (push) mode.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>in</tt></i>:</span></td>
 <td>a buffered parser input</td>
@@ -1401,8 +1392,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Refresh the content of the input buffer, the old data are considered consumed This routine handle the I18N transcoding to internal UTF-8</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>in</tt></i>:</span></td>
 <td>a buffered parser input</td>
@@ -1426,8 +1417,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Clear the top input callback from the input stack. this includes the compiled-in I/O.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the number of input callback registered or -1 in case of error.</td>
 </tr></tbody>
@@ -1441,8 +1432,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Remove the top output callbacks from the output stack. This includes the compiled-in I/O.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the number of output callback registered or -1 in case of error.</td>
 </tr></tbody>
@@ -1480,8 +1471,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Register a new set of I/O callback for handling parser input.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>matchFunc</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlIO.html#xmlInputMatchCallback">xmlInputMatchCallback</a>
@@ -1517,8 +1508,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p>Register a new set of I/O callback for handling output.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>matchFunc</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlIO.html#xmlOutputMatchCallback">xmlOutputMatchCallback</a>
@@ -1554,8 +1545,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td></td>
@@ -1575,8 +1566,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>func</tt></i>:</span></td>
 <td></td>
@@ -1591,7 +1582,8 @@ int	<a href="#xmlRegisterOutputCallbacks">xmlRegisterOutputCallbacks</a>	(<a hre
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlIO.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlIO.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlwriter.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlwriter.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xmlwriter: text writing API for XML</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xmlversion.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xpath.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xmlwriter</span></h2>
 <p>xmlwriter - text writing API for XML</p>
 <p>text writing API for XML </p>
@@ -157,8 +148,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate all the resources associated to the writer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
 </td>
@@ -173,8 +164,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xmlwriter.html#xmlNewTextWriter">xmlNewTextWriter</a> structure using an <a href="libxml2-tree.html#xmlOutputBufferPtr">xmlOutputBufferPtr</a> NOTE: the @out parameter will be deallocated when the writer is closed (if the call succeed.)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>out</tt></i>:</span></td>
 <td>an <a href="libxml2-tree.html#xmlOutputBufferPtr">xmlOutputBufferPtr</a>
@@ -195,8 +186,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xmlwriter.html#xmlNewTextWriter">xmlNewTextWriter</a> structure with @*doc as output</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>address of a <a href="libxml2-tree.html#xmlDocPtr">xmlDocPtr</a> to hold the new XML document tree</td>
@@ -220,8 +211,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xmlwriter.html#xmlNewTextWriter">xmlNewTextWriter</a> structure with @uri as output</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>uri</tt></i>:</span></td>
 <td>the URI of the resource for the output</td>
@@ -245,8 +236,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xmlwriter.html#xmlNewTextWriter">xmlNewTextWriter</a> structure with @buf as output TODO: handle compression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td><a href="libxml2-tree.html#xmlBufferPtr">xmlBufferPtr</a></td>
@@ -270,8 +261,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xmlwriter.html#xmlNewTextWriter">xmlNewTextWriter</a> structure with @ctxt as output NOTE: the @ctxt context will be freed with the resulting writer (if the call succeeds). TODO: handle compression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>
@@ -296,8 +287,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xmlwriter.html#xmlNewTextWriter">xmlNewTextWriter</a> structure with @doc as output starting at @node</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td><a href="libxml2-tree.html#xmlDocPtr">xmlDocPtr</a></td>
@@ -326,8 +317,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Flushes and closes the output buffer. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -348,8 +339,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End the current xml element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -370,8 +361,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End an xml CDATA section.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -392,8 +383,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End the current xml <a href="libxml2-SAX.html#comment">comment</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -414,8 +405,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End an xml DTD.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -436,8 +427,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End an xml DTD <a href="libxml2-SAX.html#attribute">attribute</a> list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -458,8 +449,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End an xml DTD element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -480,8 +471,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End an xml DTD entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -502,8 +493,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End an xml document. All open elements are closed, and the content is flushed to the output.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -524,8 +515,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End the current xml element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -546,8 +537,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End the current xml PI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -568,8 +559,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Flush the output buffer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -590,8 +581,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>End the current xml element. Writes an end tag even if the element is empty</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -612,8 +603,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set indentation output. indent = 0 do not indentation. indent &gt; 0 do indentation.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -638,8 +629,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set string indentation.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -664,8 +655,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Set the character used for quoting attributes.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -690,8 +681,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -716,8 +707,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml <a href="libxml2-SAX.html#attribute">attribute</a> with namespace support.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -750,8 +741,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml CDATA section.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -772,8 +763,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml <a href="libxml2-SAX.html#comment">comment</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -794,8 +785,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml DTD.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -828,8 +819,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml DTD ATTLIST.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -854,8 +845,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml DTD element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -880,8 +871,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml DTD ATTLIST.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -910,8 +901,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start a new xml document</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -944,8 +935,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -970,8 +961,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml element with namespace support.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1004,8 +995,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Start an xml PI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1030,8 +1021,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1062,8 +1053,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1102,8 +1093,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an base64 encoded xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1136,8 +1127,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a BinHex encoded xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1170,8 +1161,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml CDATA.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1196,8 +1187,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml <a href="libxml2-SAX.html#comment">comment</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1223,8 +1214,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1261,8 +1252,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD ATTLIST.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1291,8 +1282,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1321,8 +1312,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1367,8 +1358,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD external entity. The entity must have been started with <a href="libxml2-xmlwriter.html#xmlTextWriterStartDTDEntity">xmlTextWriterStartDTDEntity</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1409,8 +1400,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write the contents of a DTD external entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1443,8 +1434,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD internal entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1477,8 +1468,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1511,8 +1502,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1541,8 +1532,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml element with namespace support.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1579,8 +1570,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1614,8 +1605,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml attribute.with namespace support</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1657,8 +1648,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml CDATA.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1687,8 +1678,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml <a href="libxml2-SAX.html#comment">comment</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1717,8 +1708,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD with a formatted markup declarations part.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1759,8 +1750,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted DTD ATTLIST.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1793,8 +1784,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted DTD element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1827,8 +1818,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted DTD internal entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1865,8 +1856,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1899,8 +1890,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml element with namespace support.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1941,8 +1932,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted PI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -1975,8 +1966,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted raw xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2005,8 +1996,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2035,8 +2026,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml PI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2065,8 +2056,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a raw xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2091,8 +2082,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml text. TODO: what about entities and special chars??</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2121,8 +2112,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2147,8 +2138,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml <a href="libxml2-SAX.html#attribute">attribute</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2182,8 +2173,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml attribute.with namespace support</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2225,8 +2216,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml CDATA.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2255,8 +2246,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write an xml <a href="libxml2-SAX.html#comment">comment</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2285,8 +2276,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a DTD with a formatted markup declarations part.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2327,8 +2318,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted DTD ATTLIST.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2361,8 +2352,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted DTD element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2395,8 +2386,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted DTD internal entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2433,8 +2424,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml element.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2467,8 +2458,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml element with namespace support.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2509,8 +2500,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml PI.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2543,8 +2534,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted raw xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2573,8 +2564,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Write a formatted xml text.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>writer</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlwriter.html#xmlTextWriterPtr">xmlTextWriterPtr</a>
@@ -2598,7 +2589,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlwriter.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlwriter.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>

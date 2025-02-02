@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpath.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpath.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xpath: XML Path Language implementation</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xmlwriter.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xpathInternals.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xpath</span></h2>
 <p>xpath - XML Path Language implementation</p>
 <p>API for the XML Path Language implementation  XML Path Language implementation XPath is a language for addressing parts of an XML document, designed to be used by both XSLT and XPointer</p>
@@ -126,8 +117,8 @@ typedef <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> <a 
 </pre>
 <p>Implement a functionality similar to the DOM NodeList.length. Returns the number of nodes in the node-set.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
 </tr></tbody>
@@ -141,8 +132,8 @@ typedef <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> <a 
 </pre>
 <p>Checks whether @ns is empty or not. Returns %TRUE if @ns is an empty node-set.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
 </tr></tbody>
@@ -156,8 +147,8 @@ typedef <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> <a 
 </pre>
 <p>Implements a functionality similar to the DOM NodeList.item(). Returns the <a href="libxml2-tree.html#xmlNodePtr">xmlNodePtr</a> at the given @index in @ns or NULL if @index is out of range (0 to length-1)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
@@ -460,8 +451,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>An axis traversal function. To traverse an axis, the engine calls the first time with cur == NULL and repeat until the function returns NULL indicating the end of the axis traversal.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath interpreter context</td>
@@ -485,8 +476,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>A conversion function is associated to a type and used to cast the new type to primitive values.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>obj</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -510,8 +501,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>An XPath evaluation function, the parameters are on the XPath context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -531,8 +522,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Prototype for callbacks used to plug function lookup in the XPath engine.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath context</td>
@@ -560,8 +551,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>An XPath function. The arguments (if any) are popped out from the context stack and the result is pushed on the stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath interprestation context</td>
@@ -581,8 +572,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Prototype for callbacks used to plug variable lookup in the XPath engine.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath context</td>
@@ -634,8 +625,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a boolean to its number value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a boolean</td>
@@ -655,8 +646,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a boolean to its string value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a boolean</td>
@@ -676,8 +667,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a node-set to its boolean value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
@@ -697,8 +688,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a node-set to its number value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
@@ -718,8 +709,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a node-set to its string value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
@@ -739,8 +730,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a node to its number value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>a node</td>
@@ -760,8 +751,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a node to its string value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>a node</td>
@@ -781,8 +772,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a number to its boolean value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a number</td>
@@ -802,8 +793,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a number to its string value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a number</td>
@@ -823,8 +814,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a string to its boolean value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a string</td>
@@ -844,8 +835,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts a string to its number value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a string</td>
@@ -865,8 +856,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts an XPath object to its boolean value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -886,8 +877,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts an XPath object to its number value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -907,8 +898,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts an existing object to its string() equivalent</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -928,8 +919,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Compare two nodes w.r.t document order</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node1</tt></i>:</span></td>
 <td>the first node</td>
@@ -953,8 +944,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Compile an XPath expression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the XPath expression</td>
@@ -974,8 +965,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Evaluate the Precompiled XPath expression in the given context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>comp</tt></i>:</span></td>
 <td>the compiled XPath expression</td>
@@ -999,8 +990,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Applies the XPath boolean() function on the result of the given compiled expression.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>comp</tt></i>:</span></td>
 <td>the compiled XPath expression</td>
@@ -1024,8 +1015,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Creates/frees an object cache on the XPath context. If activates XPath objects (xmlXPathObject) will be cached internally to be reused. @options: 0: This will set the XPath object caching: @value: This will set the maximum number of XPath objects to be cached per slot There are two slots for node-set and misc objects. Use &lt;0 for the default number (100). Other values for @options have currently no effect.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -1057,8 +1048,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts an existing object to its boolean() equivalent</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -1078,8 +1069,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts an existing object to its number() equivalent</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -1099,8 +1090,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Converts an existing object to its string() equivalent</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an XPath object</td>
@@ -1120,8 +1111,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Compile an XPath expression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath context</td>
@@ -1145,8 +1136,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Evaluate the XPath Location Path in the given context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the XPath expression</td>
@@ -1170,8 +1161,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Alias for xmlXPathEval().</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the XPath expression</td>
@@ -1195,8 +1186,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Evaluate a predicate result for the current node. A PredicateExpr is evaluated by evaluating the Expr and converting the result to a boolean. If the result is a number, the result will be converted to true if the number is equal to the position of the context node in the context node list (as returned by the position function) and will be converted to false otherwise; if the result is not a number, then the result will be converted as if by a call to the boolean function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -1220,8 +1211,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free up the memory allocated by @comp</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>comp</tt></i>:</span></td>
 <td>an XPATH comp</td>
 </tr></tbody>
@@ -1235,8 +1226,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free up an <a href="libxml2-xpath.html#xmlXPathContext">xmlXPathContext</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the context to free</td>
 </tr></tbody>
@@ -1250,8 +1241,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free the NodeSet compound (not the actual nodes !).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>obj</tt></i>:</span></td>
 <td>the <a href="libxml2-xpath.html#xmlNodeSetPtr">xmlNodeSetPtr</a> to free</td>
 </tr></tbody>
@@ -1265,8 +1256,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free up the <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> @obj but don't deallocate the objects in the list contrary to xmlXPathFreeObject().</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>obj</tt></i>:</span></td>
 <td>an existing NodeSetList object</td>
 </tr></tbody>
@@ -1280,8 +1271,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free up an <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>obj</tt></i>:</span></td>
 <td>the object to free</td>
 </tr></tbody>
@@ -1303,8 +1294,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Checks whether a double is an infinity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a double value</td>
@@ -1324,8 +1315,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Checks whether a double is a NaN.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>a double value</td>
@@ -1345,8 +1336,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathContext">xmlXPathContext</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the XML document</td>
@@ -1366,8 +1357,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Evaluate the XPath Location Path in the given context. The node 'node' is set as the context node. The context node is not restored.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node to to use as the context node</td>
@@ -1395,8 +1386,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlNodeSetPtr">xmlNodeSetPtr</a> of type double and of value @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an initial xmlNodePtr, or NULL</td>
@@ -1416,8 +1407,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>allocate a new copy of a given object</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the original object</td>
@@ -1437,8 +1428,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Call this routine to speed up XPath computation on static documents. This stamps all the element nodes with the document order Like for line information, the order is kept in the element-&gt;content field, the value stored is actually - the node number (starting at -1) to be able to differentiate from line numbers.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>an input document</td>
@@ -1458,8 +1449,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Sets 'node' as the context node. The node must be in the same document as that associated with the context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>node</tt></i>:</span></td>
 <td>the node to to use as the context node</td>
@@ -1483,8 +1474,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a callback function that will be called on errors and warnings. If handler is NULL, the error handler will be deactivated. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -1503,7 +1494,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpath.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpath.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>

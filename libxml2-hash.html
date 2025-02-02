@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-hash.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-hash.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>hash: Chained hash tables</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-globals.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-list.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">hash</span></h2>
 <p>hash - Chained hash tables</p>
 <p>This module implements the hash table support used in various places in the library. </p>
@@ -74,8 +65,8 @@ int	<a href="#xmlHashUpdateEntry3">xmlHashUpdateEntry3</a>		(<a href="libxml2-ha
 </pre>
 <p>Macro to do a casting from an object pointer to a function pointer without encountering a warning from gcc #define XML_CAST_FPTR(fptr) (*(void **)(&amp;fptr)) This macro violated ISO C aliasing rules (gcc4 on s390 broke) so it is disabled now</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>fptr</tt></i>:</span></td>
 <td>pointer to a function</td>
 </tr></tbody>
@@ -107,8 +98,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback to copy data from a hash.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>payload</tt></i>:</span></td>
 <td>the data in the hash</td>
@@ -132,8 +123,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback to free data from a hash.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>payload</tt></i>:</span></td>
 <td>the data in the hash</td>
@@ -153,8 +144,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback when scanning data in a hash with the simple scanner.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>payload</tt></i>:</span></td>
 <td>the data in the hash</td>
@@ -178,8 +169,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback when scanning data in a hash with the full scanner.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>payload</tt></i>:</span></td>
 <td>the data in the hash</td>
@@ -211,8 +202,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry. If an entry with this key already exists, payload will not be updated and 0 is returned. This return value can't be distinguished from out-of-memory errors, so this function should be used with care. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -240,8 +231,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry with two strings as key. See <a href="libxml2-hash.html#xmlHashAdd">xmlHashAdd</a>. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -273,8 +264,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry with three strings as key. See <a href="libxml2-hash.html#xmlHashAdd">xmlHashAdd</a>. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -310,8 +301,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry. If an entry with this key already exists, payload will not be updated and -1 is returned. This return value can't be distinguished from out-of-memory errors, so this function should be used with care. NOTE: This function doesn't allow to distinguish malloc failures from existing entries. Use <a href="libxml2-hash.html#xmlHashAdd">xmlHashAdd</a> instead.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -339,8 +330,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry with two strings as key. See <a href="libxml2-hash.html#xmlHashAddEntry">xmlHashAddEntry</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -372,8 +363,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry with three strings as key. See <a href="libxml2-hash.html#xmlHashAddEntry">xmlHashAddEntry</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -409,8 +400,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>DEPRECATED: Leaks memory in error case. Copy the hash table using @copy to copy payloads.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -434,8 +425,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Copy the hash table using @copyFunc to copy payloads. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -463,8 +454,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new hash table. Set size to zero if the number of entries can't be estimated.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>size</tt></i>:</span></td>
 <td>initial size of the hash table</td>
@@ -484,8 +475,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new hash table backed by a dictionary. This can reduce resource usage considerably if most keys passed to API functions originate from this dictionary.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>size</tt></i>:</span></td>
 <td>the size of the hash table</td>
@@ -509,8 +500,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a hash table entry with <a href="libxml2-xmlmemory.html#xmlFree">xmlFree</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>entry</tt></i>:</span></td>
 <td>hash table entry</td>
@@ -530,8 +521,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free the hash and its contents. The payload is deallocated with @dealloc if provided.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -551,8 +542,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the entry specified by @key.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -576,8 +567,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the payload specified by the (@key, @key2) tuple.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -605,8 +596,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the payload specified by the (@key, @key2, @key3) tuple.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -638,8 +629,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the payload specified by the QName @prefix:@name or @name.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -667,8 +658,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the payload specified by the QNames tuple.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -704,8 +695,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the payload specified by the QNames tuple.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -749,8 +740,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find the entry specified by the @key and remove it from the hash table. Payload will be freed with @dealloc.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -778,8 +769,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove an entry with two strings as key. See <a href="libxml2-hash.html#xmlHashRemoveEntry">xmlHashRemoveEntry</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -811,8 +802,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Remove an entry with three strings as key. See <a href="libxml2-hash.html#xmlHashRemoveEntry">xmlHashRemoveEntry</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -848,8 +839,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Scan the hash @table and apply @scan to each value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -873,8 +864,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Scan the hash @table and apply @scan to each value matching (@key, @key2, @key3) tuple. If one of the keys is null, the comparison is considered to match.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -910,8 +901,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Scan the hash @table and apply @scan to each value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -935,8 +926,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Scan the hash @table and apply @scan to each value matching (@key, @key2, @key3) tuple. If one of the keys is null, the comparison is considered to match.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -972,8 +963,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Query the number of elements in the hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -993,8 +984,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry. If an entry with this key already exists, the old payload will be freed and updated with the new value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -1026,8 +1017,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry with two strings as key. See <a href="libxml2-hash.html#xmlHashUpdateEntry">xmlHashUpdateEntry</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -1063,8 +1054,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Add a hash table entry with three strings as key. See <a href="libxml2-hash.html#xmlHashUpdateEntry">xmlHashUpdateEntry</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>hash</tt></i>:</span></td>
 <td>hash table</td>
@@ -1099,7 +1090,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-hash.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-hash.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

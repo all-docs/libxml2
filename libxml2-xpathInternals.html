@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpathInternals.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpathInternals.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xpathInternals: internal interfaces for XML Path Language implementation</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xpath.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xpointer.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xpathInternals</span></h2>
 <p>xpathInternals - internal interfaces for XML Path Language implementation</p>
 <p>internal interfaces for XML Path Language implementation used to build new modules on top of XPath like XPointer and XSLT </p>
@@ -208,8 +199,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Macro to check that the number of args passed to an XPath function matches.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>x</tt></i>:</span></td>
 <td>the number of expected args</td>
 </tr></tbody>
@@ -239,8 +230,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Macro to check that the value on top of the XPath stack is of a given type.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>typeval</tt></i>:</span></td>
 <td>the XPath type</td>
 </tr></tbody>
@@ -254,8 +245,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Macro to check that the value on top of the XPath stack is of a given type. Return(0) in case of failure</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>typeval</tt></i>:</span></td>
 <td>the XPath type</td>
 </tr></tbody>
@@ -269,8 +260,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Macro to raise an XPath error and return.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>X</tt></i>:</span></td>
 <td>the error code</td>
 </tr></tbody>
@@ -284,8 +275,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Macro to raise an XPath error and return 0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>X</tt></i>:</span></td>
 <td>the error code</td>
 </tr></tbody>
@@ -299,8 +290,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Check if an XPath error was raised. Returns true if an error has been raised, false otherwise.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -314,8 +305,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Empties a node-set.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>a node-set</td>
 </tr></tbody>
@@ -329,8 +320,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Get the context node of an XPath context. Returns the context node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -344,8 +335,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Get the document of an XPath context. Returns the context document.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -359,8 +350,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Get the error code of an XPath context. Returns the context error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -374,8 +365,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes the boolean @val on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -395,8 +386,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes an empty node-set on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -410,8 +401,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes an empty string on the stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -425,8 +416,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes user data on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -446,8 +437,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes false on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -461,8 +452,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes the node-set @ns on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -482,8 +473,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes the double @val on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -503,8 +494,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes the string @str on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -524,8 +515,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes true on the context stack.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -539,8 +530,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Raises an <a href="libxml2-xpath.html#XPATH_INVALID_ARITY">XPATH_INVALID_ARITY</a> error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -554,8 +545,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Raises an error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -575,8 +566,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Raises an <a href="libxml2-xpath.html#XPATH_INVALID_TYPE">XPATH_INVALID_TYPE</a> error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -590,8 +581,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Checks if the current value on the XPath stack is an external object. Returns true if the current object on the stack is an external object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -605,8 +596,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Check if the current value on the XPath stack is a node set or an XSLT value tree. Returns true if the current object on the stack is a node-set.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
 </tr></tbody>
@@ -620,8 +611,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pops the top XPath object from the value stack</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath evaluation context</td>
@@ -641,8 +632,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pushes a new XPath object on top of the value stack. If value is NULL, a memory error is recorded in the parser context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath evaluation context</td>
@@ -666,8 +657,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the add operation on XPath objects: The numeric operators convert their operands to numbers as if by calling the number function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -681,8 +672,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the boolean() XPath function boolean boolean(object) The boolean function converts its argument to a boolean as follows: - a number is true if and only if it is neither positive or negative zero nor NaN - a node-set is true if and only if it is non-empty - a string is true if and only if its length is non-zero</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -702,8 +693,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the ceiling() XPath function number ceiling(number) The ceiling function returns the smallest (closest to negative infinity) number that is not less than the argument and that is an integer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -723,8 +714,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the compare operation on XPath objects: @arg1 &lt; @arg2 (1, 1, ... @arg1 &lt;= @arg2 (1, 0, ... @arg1 &gt; @arg2 (0, 1, ... @arg1 &gt;= @arg2 (0, 0, ... When neither object to be compared is a node-set and the operator is &lt;=, &lt;, &gt;=, &gt;, then the objects are compared by converted both objects to numbers and comparing the numbers according to IEEE 754. The &lt; comparison will be true if and only if the first number is less than the second number. The &lt;= comparison will be true if and only if the first number is less than or equal to the second number. The &gt; comparison will be true if and only if the first number is greater than the second number. The &gt;= comparison will be true if and only if the first number is greater than or equal to the second number.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -752,8 +743,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the concat() XPath function string concat(string, string, string*) The concat function returns the concatenation of its arguments.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -773,8 +764,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the contains() XPath function boolean contains(string, string) The contains function returns true if the first argument string contains the second argument string, and otherwise returns false.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -794,8 +785,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the count() XPath function number count(node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -815,8 +806,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Dumps the tree of the compiled XPath expression.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>output</tt></i>:</span></td>
 <td>the FILE * for the output</td>
@@ -840,8 +831,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Dump the content of the object for debugging purposes</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>output</tt></i>:</span></td>
 <td>the FILE * to dump the output</td>
@@ -865,8 +856,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets difference() function: node-set set:difference (node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set</td>
@@ -890,8 +881,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets distinct() function: node-set set:distinct (node-set) @nodes is sorted by document order, then #exslSetsDistinctSorted is called with the sorted node-set</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes</tt></i>:</span></td>
 <td>a node-set</td>
@@ -911,8 +902,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets distinct() function: node-set set:distinct (node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes</tt></i>:</span></td>
 <td>a node-set, sorted by document order</td>
@@ -932,8 +923,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the div operation on XPath objects @arg1 / @arg2: The numeric operators convert their operands to numbers as if by calling the number function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -947,8 +938,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the equal operation on XPath objects content: @arg1 == @arg2</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -968,8 +959,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Handle an XPath error</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>a XPath parser context</td>
@@ -989,8 +980,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Parse and evaluate an XPath expression in the given context, then push the result on the context stack</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -1004,8 +995,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Evaluate a predicate result for the current node. A PredicateExpr is evaluated by evaluating the Expr and converting the result to a boolean. If the result is a number, the result will be converted to true if the number is equal to the position of the context node in the context node list (as returned by the position function) and will be converted to false otherwise; if the result is not a number, then the result will be converted as if by a call to the boolean function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1029,8 +1020,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the false() XPath function boolean false()</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1050,8 +1041,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the floor() XPath function number floor(number) The floor function returns the largest (closest to positive infinity) number that is not greater than the argument and that is an integer.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1071,8 +1062,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Free up an <a href="libxml2-xpath.html#xmlXPathParserContext">xmlXPathParserContext</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the context to free</td>
 </tr></tbody>
@@ -1086,8 +1077,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Search in the Function array of the context for the given function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -1111,8 +1102,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Search in the Function array of the context for the given function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -1140,8 +1131,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets has-same-nodes function: boolean set:has-same-node(node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set</td>
@@ -1165,8 +1156,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the id() XPath function node-set id(object) The id function selects elements by their unique ID (see [5.2.1 Unique IDs]). When the argument to id is of type node-set, then the result is the union of the result of applying id to the string value of each of the nodes in the argument node-set. When the argument to id is of any other type, the argument is converted to a string as if by a call to the string function; the string is split into a whitespace-separated list of tokens (whitespace is any sequence of <a href="libxml2-SAX.html#characters">characters</a> matching the production S); the result is a node-set containing the elements in the same document as the context node that have a unique ID equal to any of the tokens in the list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1186,8 +1177,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets intersection() function: node-set set:intersection (node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set</td>
@@ -1211,8 +1202,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Is the name given a NodeType one. [38] NodeType ::= 'comment' | 'text' | 'processing-instruction' | 'node'</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>a name string</td>
@@ -1232,8 +1223,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the lang() XPath function boolean lang(string) The lang function returns true or false depending on whether the language of the context node as specified by xml:lang attributes is the same as or is a sublanguage of the language specified by the argument string. The language of the context node is determined by the value of the xml:lang <a href="libxml2-SAX.html#attribute">attribute</a> on the context node, or, if the context node has no xml:lang attribute, by the value of the xml:lang <a href="libxml2-SAX.html#attribute">attribute</a> on the nearest ancestor of the context node that has an xml:lang <a href="libxml2-SAX.html#attribute">attribute</a>. If there is no such attribute, then lang</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1253,8 +1244,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the last() XPath function number last() The last function returns the number of nodes in the context node list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1274,8 +1265,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets leading() function: node-set set:leading (node-set, node-set) @nodes1 and @nodes2 are sorted by document order, then #exslSetsLeadingSorted is called.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set</td>
@@ -1299,8 +1290,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets leading() function: node-set set:leading (node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set, sorted by document order</td>
@@ -1324,8 +1315,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the local-name() XPath function string local-name(node-set?) The local-name function returns a string containing the local part of the name of the node in the argument node-set that is first in document order. If the node-set is empty or the first node has no name, an empty string is returned. If the argument is omitted it defaults to the context node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1345,8 +1336,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the mod operation on XPath objects: @arg1 / @arg2 The numeric operators convert their operands to numbers as if by calling the number function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -1360,8 +1351,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the multiply operation on XPath objects: The numeric operators convert their operands to numbers as if by calling the number function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -1375,8 +1366,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the namespace-uri() XPath function string namespace-uri(node-set?) The namespace-uri function returns a string containing the namespace URI of the expanded name of the node in the argument node-set that is first in document order. If the node-set is empty, the first node has no name, or the expanded name has no namespace URI, an empty string is returned. If the argument is omitted it defaults to the context node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1396,8 +1387,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type boolean and of value @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the boolean value</td>
@@ -1417,8 +1408,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type string and of value @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the char * value</td>
@@ -1438,8 +1429,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type double and of value @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the double value</td>
@@ -1459,8 +1450,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type NodeSet and initialize it with the single Node @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the NodePtr value</td>
@@ -1480,8 +1471,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type NodeSet and initialize it with the Nodeset @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an existing NodeSet</td>
@@ -1501,8 +1492,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathParserContext">xmlXPathParserContext</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the XPath expression</td>
@@ -1526,8 +1517,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type string and of value @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * value</td>
@@ -1547,8 +1538,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type Value Tree (XSLT) and initialize it with the tree root @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the NodePtr value</td>
@@ -1568,8 +1559,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "ancestor" direction the ancestor axis contains the ancestors of the context node; the ancestors of the context node consist of the parent of context node and the parent's parent and so on; the nodes are ordered in reverse document order; thus the parent is the first node on the axis, and the parent's parent is the second node on the axis</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1593,8 +1584,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "ancestor-or-self" direction he ancestor-or-self axis contains the context node and ancestors of the context node in reverse document order; thus the context node is the first node on the axis, and the context node's parent the second; parent here is defined the same as with the parent axis.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1618,8 +1609,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "attribute" direction TODO: support DTD inherited default attributes</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1643,8 +1634,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "child" direction The child axis contains the children of the context node in document order.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1668,8 +1659,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "descendant" direction the descendant axis contains the descendants of the context node in document order; a descendant is a child or a child of a child and so on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1693,8 +1684,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "descendant-or-self" direction the descendant-or-self axis contains the context node and the descendants of the context node in document order; thus the context node is the first node on the axis, and the first child of the context node is the second node on the axis</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1718,8 +1709,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "following" direction The following axis contains all nodes in the same document as the context node that are after the context node in document order, excluding any descendants and excluding <a href="libxml2-SAX.html#attribute">attribute</a> nodes and namespace nodes; the nodes are ordered in document order</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1743,8 +1734,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "following-sibling" direction The following-sibling axis contains the following siblings of the context node in document order.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1768,8 +1759,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "namespace" direction the namespace axis contains the namespace nodes of the context node; the order of nodes on this axis is implementation-defined; the axis will be empty unless the context node is an element We keep the XML namespace node at the end of the list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1793,8 +1784,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "parent" direction The parent axis contains the parent of the context node, if there is one.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1818,8 +1809,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "preceding" direction the preceding axis contains all nodes in the same document as the context node that are before the context node in document order, excluding any ancestors and excluding <a href="libxml2-SAX.html#attribute">attribute</a> nodes and namespace nodes; the nodes are ordered in reverse document order</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1843,8 +1834,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "preceding-sibling" direction The preceding-sibling axis contains the preceding siblings of the context node in reverse document order; the first preceding sibling is first on the axis; the sibling preceding that node is the second on the axis and so on.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1868,8 +1859,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Traversal function for the "self" direction The self axis contains just the context node itself</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -1893,8 +1884,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets leading() function: node-set set:leading (node-set, node-set) @nodes is sorted by document order, then #exslSetsNodeLeadingSorted is called.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes</tt></i>:</span></td>
 <td>a node-set</td>
@@ -1918,8 +1909,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets leading() function: node-set set:leading (node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes</tt></i>:</span></td>
 <td>a node-set, sorted by document order</td>
@@ -1943,8 +1934,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>add a new <a href="libxml2-tree.html#xmlNodePtr">xmlNodePtr</a> to an existing NodeSet</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial node set</td>
@@ -1969,8 +1960,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>add a new namespace node to an existing NodeSet</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial node set</td>
@@ -1998,8 +1989,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>add a new <a href="libxml2-tree.html#xmlNodePtr">xmlNodePtr</a> to an existing NodeSet, optimized version when we are sure the node is not already in the set.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial node set</td>
@@ -2024,8 +2015,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>checks whether @cur contains @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the node-set</td>
@@ -2049,8 +2040,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Removes an <a href="libxml2-tree.html#xmlNodePtr">xmlNodePtr</a> from an existing NodeSet</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial node set</td>
@@ -2071,8 +2062,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Namespace nodes in libxml don't match the XPath semantic. In a node set the namespace nodes are duplicated and the next pointer is set to the parent node in the XPath semantic. Check if such a node needs to be freed</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ns</tt></i>:</span></td>
 <td>the XPath namespace node found in a nodeset.</td>
 </tr></tbody>
@@ -2086,8 +2077,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Merges two nodesets, all nodes from @val2 are added to @val1 if @val1 is NULL, a new set is created and copied from @val2</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val1</tt></i>:</span></td>
 <td>the first NodeSet or NULL</td>
@@ -2111,8 +2102,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Removes an entry from an existing NodeSet list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial node set</td>
@@ -2132,8 +2123,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Sort the node set in document order</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>set</tt></i>:</span></td>
 <td>the node set</td>
 </tr></tbody>
@@ -2147,8 +2138,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets trailing() function: node-set set:trailing (node-set, node-set) @nodes is sorted by document order, then #xmlXPathNodeTrailingSorted is called.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes</tt></i>:</span></td>
 <td>a node-set</td>
@@ -2172,8 +2163,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets trailing() function: node-set set:trailing (node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes</tt></i>:</span></td>
 <td>a node-set, sorted by document order</td>
@@ -2197,8 +2188,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the normalize-space() XPath function string normalize-space(string?) The normalize-space function returns the argument string with white space normalized by stripping leading and trailing whitespace and replacing sequences of whitespace <a href="libxml2-SAX.html#characters">characters</a> by a single space. Whitespace <a href="libxml2-SAX.html#characters">characters</a> are the same allowed by the S production in XML. If the argument is omitted, it defaults to the context node converted to a string, in other words the value of the context node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2218,8 +2209,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the equal operation on XPath objects content: @arg1 == @arg2</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2239,8 +2230,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the not() XPath function boolean not(boolean) The not function returns true if its argument is false, and false otherwise.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2260,8 +2251,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Search in the namespace declaration array of the context for the given namespace name associated to the given prefix</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2285,8 +2276,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the number() XPath function number number(object?)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2306,8 +2297,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>parse an XML namespace non qualified name. [NS 3] NCName ::= (Letter | '_') (NCNameChar)* [NS 4] NCNameChar ::= Letter | Digit | '.' | '-' | '_' | CombiningChar | Extender</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2327,8 +2318,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>parse an XML name [4] NameChar ::= Letter | Digit | '.' | '-' | '_' | ':' | CombiningChar | Extender [5] Name ::= (Letter | '_' | ':') (NameChar)*</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2348,8 +2339,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pops a boolean from the stack, handling conversion if needed. Check error with #xmlXPathCheckError.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -2369,8 +2360,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pops an external object from the stack, handling conversion if needed. Check error with #xmlXPathCheckError.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -2390,8 +2381,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pops a node-set from the stack, handling conversion if needed. Check error with #xmlXPathCheckError.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -2411,8 +2402,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pops a number from the stack, handling conversion if needed. Check error with #xmlXPathCheckError.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -2432,8 +2423,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Pops a string from the stack, handling conversion if needed. Check error with #xmlXPathCheckError.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an XPath parser context</td>
@@ -2453,8 +2444,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the position() XPath function number position() The position function returns the position of the context node in the context node list. The first position is 1, and so the last position will be equal to last().</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2474,8 +2465,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Registers all default XPath functions in this context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
 </tr></tbody>
@@ -2489,8 +2480,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Register a new function. If @f is NULL it unregisters the function</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2518,8 +2509,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Registers an external mechanism to do function lookup.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2543,8 +2534,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Register a new function. If @f is NULL it unregisters the function</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2576,8 +2567,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Register a new namespace. If @ns_uri is NULL it unregisters the namespace</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2605,8 +2596,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Register a new variable value. If @value is NULL it unregisters the variable</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2634,8 +2625,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>register an external mechanism to do variable lookup</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2659,8 +2650,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Register a new variable value. If @value is NULL it unregisters the variable</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -2692,8 +2683,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Cleanup the XPath context data associated to registered functions</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
 </tr></tbody>
@@ -2707,8 +2698,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Cleanup the XPath context data associated to registered variables</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
 </tr></tbody>
@@ -2722,8 +2713,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Cleanup the XPath context data associated to registered variables</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
 </tr></tbody>
@@ -2737,8 +2728,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Initialize the context to the root of the document</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -2752,8 +2743,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the round() XPath function number round(number) The round function returns the number that is closest to the argument and that is an integer. If there are two such numbers, then the one that is closest to positive infinity is returned.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2773,8 +2764,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the starts-with() XPath function boolean starts-with(string, string) The starts-with function returns true if the first argument string starts with the second argument string, and otherwise returns false.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2794,8 +2785,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>[30a] Float ::= Number ('e' Digits?)? [30] Number ::= Digits ('.' Digits?)? | '.' Digits [31] Digits ::= [0-9]+ Compile a Number in the string In complement of the Number expression, this function also handles negative values : '-' Number.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>A string to scan</td>
@@ -2815,8 +2806,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the string() XPath function string string(object?) The string function converts an object to a string as follows: - A node-set is converted to a string by returning the value of the node in the node-set that is first in document order. If the node-set is empty, an empty string is returned. - A number is converted to a string as follows + NaN is converted to the string NaN + positive zero is converted to the string 0 + negative zero is converted to the string 0 + positive infinity is converted to the string Infinity + negative infinity is converted to the string -Infinity + if the number is an integer, the number is represented in decimal form as a Number with no decimal point and no leading zeros, preceded by a minus sign (-) if the number is negative + otherwise, the number is represented in decimal form as a Number including a decimal point with at least one digit before the decimal point and at least one digit after the decimal point, preceded by a minus sign (-) if the number is negative; there must be no leading zeros before the decimal point apart possibly from the one required digit immediately before the decimal point; beyond the one required digit after the decimal point there must be as many, but only as many, more digits as are needed to uniquely distinguish the number from all other IEEE 754 numeric values. - The boolean false value is converted to the string false. The boolean true value is converted to the string true. If the argument is omitted, it defaults to a node-set with the context node as its only member.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2836,8 +2827,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the string-length() XPath function number string-length(string?) The string-length returns the number of <a href="libxml2-SAX.html#characters">characters</a> in the string (see [3.6 Strings]). If the argument is omitted, it defaults to the context node converted to a string, in other words the value of the context node.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2857,8 +2848,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the subtraction operation on XPath objects: The numeric operators convert their operands to numbers as if by calling the number function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -2872,8 +2863,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the substring-after() XPath function string substring-after(string, string) The substring-after function returns the substring of the first argument string that follows the first occurrence of the second argument string in the first argument string, or the empty string if the first argument string does not contain the second argument string. For example, substring-after("1999/04/01","/") returns 04/01, and substring-after("1999/04/01","19") returns 99/04/01.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2893,8 +2884,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the substring-before() XPath function string substring-before(string, string) The substring-before function returns the substring of the first argument string that precedes the first occurrence of the second argument string in the first argument string, or the empty string if the first argument string does not contain the second argument string. For example, substring-before("1999/04/01","/") returns 1999.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2914,8 +2905,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the substring() XPath function string substring(string, number, number?) The substring function returns the substring of the first argument starting at the position specified in the second argument with length specified in the third argument. For example, substring("12345",2,3) returns "234". If the third argument is not specified, it returns the substring starting at the position specified in the second argument and continuing to the end of the string. For example, substring("12345",2) returns "2345". More precisely, each character in the string (see [3.6 Strings]) is considered to have a numeric position: the position of the first character is 1, the position of the second character is 2 and so on. The returned substring contains those <a href="libxml2-SAX.html#characters">characters</a> for which the position of the character is greater than or equal to the second argument and, if the third argument is specified, less than the sum of the second and third arguments; the comparisons and addition used for the above follow the standard IEEE 754 rules. Thus: - substring("12345", 1.5, 2.6) returns "234" - substring("12345", 0, 3) returns "12" - substring("12345", 0 div 0, 3) returns "" - substring("12345", 1, 0 div 0) returns "" - substring("12345", -42, 1 div 0) returns "12345" - substring("12345", -1 div 0, 1 div 0) returns ""</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2935,8 +2926,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the sum() XPath function number sum(node-set) The sum function returns the sum of the values of the nodes in the argument node-set.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -2956,8 +2947,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets trailing() function: node-set set:trailing (node-set, node-set) @nodes1 and @nodes2 are sorted by document order, then #xmlXPathTrailingSorted is called.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set</td>
@@ -2981,8 +2972,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implements the EXSLT - Sets trailing() function: node-set set:trailing (node-set, node-set)</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>nodes1</tt></i>:</span></td>
 <td>a node-set, sorted by document order</td>
@@ -3006,8 +2997,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the translate() XPath function string translate(string, string, string) The translate function returns the first argument string with occurrences of <a href="libxml2-SAX.html#characters">characters</a> in the second argument string replaced by the character at the corresponding position in the third argument string. For example, translate("bar","abc","ABC") returns the string BAr. If there is a character in the second argument string with no character at a corresponding position in the third argument string (because the second argument string is longer than the third argument string), then occurrences of that character in the first argument string are removed. For example, translate("--aaa--","abc-","ABC")</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -3027,8 +3018,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the true() XPath function boolean true()</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -3048,8 +3039,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Implement the unary - operation on an XPath object The numeric operators convert their operands to numbers as if by calling the number function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
 </tr></tbody>
@@ -3063,8 +3054,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Search in the Variable array of the context for the given variable value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -3088,8 +3079,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Search in the Variable array of the context for the given variable value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath context</td>
@@ -3117,8 +3108,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Wraps a string into an XPath object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the char * value</td>
@@ -3138,8 +3129,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Wraps the @val data into an XPath object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the user data</td>
@@ -3159,8 +3150,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Wrap the Nodeset @val in a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the NodePtr value</td>
@@ -3180,8 +3171,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Wraps the @val string into an XPath object.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * value</td>
@@ -3201,8 +3192,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 </pre>
 <p>Formats an error message.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPath Parser context</td>
@@ -3225,7 +3216,8 @@ void	<a href="#xmlXPatherror">xmlXPatherror</a>			(<a href="libxml2-xpath.html#x
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpathInternals.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpathInternals.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>

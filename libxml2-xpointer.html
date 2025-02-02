@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpointer.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpointer.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xpointer: API to handle XML Pointers</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,12 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xpathInternals.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xpointer</span></h2>
 <p>xpointer - API to handle XML Pointers</p>
 <p>API to handle XML Pointers Base implementation was made accordingly to W3C Candidate Recommendation 7 June 2000</p>
@@ -80,8 +72,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Build a node list tree copy of the XPointer result. This will drop Attributes and Namespace declarations.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>obj</tt></i>:</span></td>
 <td>the XPointer result from the evaluation.</td>
@@ -101,8 +93,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Evaluate the XPath Location Path in the given context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the XPointer expression</td>
@@ -126,8 +118,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>[8] Predicate ::= '[' PredicateExpr ']' [9] PredicateExpr ::= Expr Evaluate a predicate as in xmlXPathEvalPredicate() but for a Location Set instead of a node set</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPointer Parser context</td>
 </tr></tbody>
@@ -141,8 +133,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Free the LocationSet compound (not the actual ranges !).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>obj</tt></i>:</span></td>
 <td>the <a href="libxml2-xpointer.html#xmlLocationSetPtr">xmlLocationSetPtr</a> to free</td>
 </tr></tbody>
@@ -156,8 +148,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>add a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> to an existing LocationSet If the location already exist in the set @val is freed.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial range set</td>
@@ -178,8 +170,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpointer.html#xmlLocationSetPtr">xmlLocationSetPtr</a> of type double and of value @val</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>an initial xmlXPathObjectPtr, or NULL</td>
@@ -199,8 +191,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Removes an <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> from an existing LocationSet</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial range set</td>
@@ -221,8 +213,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Merges two rangesets, all ranges from @val2 are added to @val1</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val1</tt></i>:</span></td>
 <td>the first LocationSet</td>
@@ -246,8 +238,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Removes an entry from an existing LocationSet list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the initial range set</td>
@@ -267,8 +259,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range using a single nodes</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting and ending node</td>
@@ -288,8 +280,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new XPointer context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the XML document</td>
@@ -317,8 +309,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type LocationSet and initialize it with all the nodes from @set</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>set</tt></i>:</span></td>
 <td>a node set</td>
@@ -338,8 +330,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type LocationSet and initialize it with the single range made of the two nodes @start and @end</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the start NodePtr value</td>
@@ -363,8 +355,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting node</td>
@@ -396,8 +388,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range from a not to an object</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting node</td>
@@ -421,8 +413,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range from a node to a point</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting node</td>
@@ -446,8 +438,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range using 2 nodes</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting node</td>
@@ -471,8 +463,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range from a point to a node</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting point</td>
@@ -496,8 +488,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Create a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a> of type range using 2 Points</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>start</tt></i>:</span></td>
 <td>the starting point</td>
@@ -521,8 +513,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Implement the range-to() XPointer function Obsolete. range-to is not a real function but a special type of location step which is handled in xpath.c.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the XPointer Parser context</td>
@@ -542,8 +534,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 </pre>
 <p>Wrap the LocationSet @val in a new <a href="libxml2-xpath.html#xmlXPathObjectPtr">xmlXPathObjectPtr</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>val</tt></i>:</span></td>
 <td>the LocationSet value</td>
@@ -558,7 +550,8 @@ void	<a href="#xmlXPtrRangeToFunction">xmlXPtrRangeToFunction</a>		(<a href="lib
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpointer.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xpointer.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>

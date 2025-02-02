@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlerror.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlerror.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xmlerror: error handling</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xmlautomata.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xmlexports.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xmlerror</span></h2>
 <p>xmlerror - error handling</p>
 <p>the API used to report errors </p>
@@ -898,8 +889,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Signature of the function to use when there is an error and no parsing or validity context available .</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>a parsing context</td>
@@ -923,8 +914,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Signature of the function to use when there is an error and the module handles the new error reporting mechanism.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>userData</tt></i>:</span></td>
 <td>user provided data for the error callback</td>
@@ -944,8 +935,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-xmlerror.html#xmlSetGenericErrorFunc">xmlSetGenericErrorFunc</a>. Set or reset (if NULL) the default handler for generic errors to the builtin error function.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>handler</tt></i>:</span></td>
 <td>the handler</td>
 </tr></tbody>
@@ -959,8 +950,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Save the original error to the new place.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>from</tt></i>:</span></td>
 <td>a source error</td>
@@ -984,8 +975,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Get the last parsing error registered.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>an XML parser context</td>
@@ -1005,8 +996,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Cleanup the last global error registered. For parsing error this does not change the well-formedness result.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>an XML parser context</td>
 </tr></tbody>
@@ -1020,8 +1011,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Report a formatted error to a printf-like callback. This can result in a verbose multi-line report including additional information from the parser context. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>err</tt></i>:</span></td>
 <td>the error</td>
@@ -1045,8 +1036,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Get the last global error registered. This is per thread if compiled with thread support.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>a pointer to the error</td>
 </tr></tbody>
@@ -1060,8 +1051,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Display and format an error messages, gives file, line, position and extra parameters.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>an XML parser context</td>
@@ -1085,8 +1076,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-xmlerror.html#xmlFormatError">xmlFormatError</a>. Displays current context within the input content for error tracking</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>input</tt></i>:</span></td>
 <td>an <a href="libxml2-tree.html#xmlParserInputPtr">xmlParserInputPtr</a> input</td>
 </tr></tbody>
@@ -1100,8 +1091,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>DEPRECATED: Use <a href="libxml2-xmlerror.html#xmlFormatError">xmlFormatError</a>. Displays the associated file and line information for the current input</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>input</tt></i>:</span></td>
 <td>an <a href="libxml2-tree.html#xmlParserInputPtr">xmlParserInputPtr</a> input</td>
 </tr></tbody>
@@ -1115,8 +1106,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Display and format an validity error messages, gives file, line, position and extra parameters.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>an XML parser context</td>
@@ -1140,8 +1131,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Display and format a validity warning messages, gives file, line, position and extra parameters.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>an XML parser context</td>
@@ -1165,8 +1156,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Display and format a warning messages, gives file, line, position and extra parameters.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>an XML parser context</td>
@@ -1190,8 +1181,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>Cleanup the error.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>err</tt></i>:</span></td>
 <td>pointer to the error.</td>
 </tr></tbody>
@@ -1213,8 +1204,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>DEPRECATED: See <a href="libxml2-xmlerror.html#xmlSetStructuredErrorFunc">xmlSetStructuredErrorFunc</a> for alternatives. Set the global "generic" handler and context for error messages. The generic error handler will only receive fragments of error messages which should be concatenated or printed to a stream. If handler is NULL, use the built-in default handler which prints to stderr. Since this is a global setting, it's a good idea to reset the error handler to its default value after collecting the errors you're interested in. For multi-threaded applications, this must be set separately for each thread.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>the new error handling context</td>
@@ -1234,8 +1225,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p>DEPRECATED: Use a per-context error handler. It's recommended to use the per-context error handlers instead: - <a href="libxml2-parser.html#xmlCtxtSetErrorHandler">xmlCtxtSetErrorHandler</a> (since 2.13.0) - <a href="libxml2-xmlreader.html#xmlTextReaderSetStructuredErrorHandler">xmlTextReaderSetStructuredErrorHandler</a> - <a href="libxml2-xpath.html#xmlXPathSetErrorHandler">xmlXPathSetErrorHandler</a> (since 2.13.0) - <a href="libxml2-xinclude.html#xmlXIncludeSetErrorHandler">xmlXIncludeSetErrorHandler</a> (since 2.13.0) - <a href="libxml2-xmlschemas.html#xmlSchemaSetParserStructuredErrors">xmlSchemaSetParserStructuredErrors</a> - <a href="libxml2-xmlschemas.html#xmlSchemaSetValidStructuredErrors">xmlSchemaSetValidStructuredErrors</a> - <a href="libxml2-relaxng.html#xmlRelaxNGSetParserStructuredErrors">xmlRelaxNGSetParserStructuredErrors</a> - <a href="libxml2-relaxng.html#xmlRelaxNGSetValidStructuredErrors">xmlRelaxNGSetValidStructuredErrors</a> Set the global "structured" handler and context for error messages. If handler is NULL, the error handler is deactivated. The structured error handler takes precedence over "generic" handlers, even per-context generic handlers. Since this is a global setting, it's a good idea to deactivate the error handler after collecting the errors you're interested in. For multi-threaded applications, this must be set separately for each thread.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td>the new error handling context</td>
@@ -1255,8 +1246,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td></td>
@@ -1276,8 +1267,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 </pre>
 <p></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctx</tt></i>:</span></td>
 <td></td>
@@ -1292,7 +1283,8 @@ void	<a href="#xmlThrDefSetStructuredErrorFunc">xmlThrDefSetStructuredErrorFunc<
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlerror.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlerror.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>

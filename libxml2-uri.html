@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-uri.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-uri.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>uri: library of generic URI related routines</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-tree.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-valid.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">uri</span></h2>
 <p>uri - library of generic URI related routines</p>
 <p>library of generic URI related routines Implements RFC 2396 </p>
@@ -86,8 +77,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>See <a href="libxml2-uri.html#xmlBuildRelativeURISafe">xmlBuildRelativeURISafe</a>.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>the URI <a href="libxml2-SAX.html#reference">reference</a> under consideration</td>
@@ -111,8 +102,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Expresses the URI of the <a href="libxml2-SAX.html#reference">reference</a> in terms relative to the base. Some examples of this operation include: base = "http://site1.com/docs/book1.html" URI input URI returned docs/pic1.gif pic1.gif docs/img/pic1.gif img/pic1.gif img/pic1.gif ../img/pic1.gif http://site1.com/docs/pic1.gif pic1.gif http://site2.com/docs/pic1.gif http://site2.com/docs/pic1.gif base = "docs/book1.html" URI input URI returned docs/pic1.gif pic1.gif docs/img/pic1.gif img/pic1.gif img/pic1.gif ../img/pic1.gif http://site1.com/docs/pic1.gif http://site1.com/docs/pic1.gif Note: if the URI <a href="libxml2-SAX.html#reference">reference</a> is really weird or complicated, it may be worthwhile to first convert it into a "nice" one by calling <a href="libxml2-uri.html#xmlBuildURI">xmlBuildURI</a> (using 'base') before calling this routine, since this routine (for reasonable efficiency) assumes URI has already been through some validation. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>the URI <a href="libxml2-SAX.html#reference">reference</a> under consideration</td>
@@ -140,8 +131,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Computes he final URI of the <a href="libxml2-SAX.html#reference">reference</a> done by checking that the given URI is valid, and building the final URI using the base URI. This is processed according to section 5.2 of the RFC 2396 5.2. Resolving Relative References to Absolute Form</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>the URI instance found in the document</td>
@@ -165,8 +156,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Computes he final URI of the <a href="libxml2-SAX.html#reference">reference</a> done by checking that the given URI is valid, and building the final URI using the base URI. This is processed according to section 5.2 of the RFC 2396 5.2. Resolving Relative References to Absolute Form Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>URI</tt></i>:</span></td>
 <td>the URI instance found in the document</td>
@@ -194,8 +185,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Prepares a path. If the path contains the substring "://", it is considered a Legacy Extended IRI. Characters which aren't allowed in URIs are escaped. Otherwise, the path is considered a filesystem path which is copied without modification. The caller is responsible for freeing the memory occupied by the returned string. If there is insufficient memory available, or the argument is NULL, the function returns NULL.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>path</tt></i>:</span></td>
 <td>the resource locator in a filesystem notation</td>
@@ -215,8 +206,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Simply creates an empty <a href="libxml2-uri.html#xmlURI">xmlURI</a></p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the new structure or NULL in case of error</td>
 </tr></tbody>
@@ -230,8 +221,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Free up the <a href="libxml2-uri.html#xmlURI">xmlURI</a> struct</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>uri</tt></i>:</span></td>
 <td>pointer to an <a href="libxml2-uri.html#xmlURI">xmlURI</a>
 </td>
@@ -246,8 +237,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Applies the 5 normalization steps to a path string--that is, RFC 2396 Section 5.2, steps 6.c through 6.g. Normalization occurs directly on the string, no new allocation is done</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>path</tt></i>:</span></td>
 <td>pointer to the path string</td>
@@ -267,8 +258,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Parse an URI based on RFC 3986 URI-reference = [ absoluteURI | relativeURI ] [ "#" fragment ]</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the URI string to analyze</td>
@@ -288,8 +279,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Parse an URI but allows to keep intact the original fragments. URI-reference = URI / relative-ref</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the URI string to analyze</td>
@@ -313,8 +304,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Parse an URI <a href="libxml2-SAX.html#reference">reference</a> string based on RFC 3986 and fills in the appropriate fields of the @uri structure URI-reference = URI / relative-ref</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>uri</tt></i>:</span></td>
 <td>pointer to an URI structure</td>
@@ -338,8 +329,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Parse an URI based on RFC 3986 URI-reference = [ absoluteURI | relativeURI ] [ "#" fragment ] Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the URI string to analyze</td>
@@ -363,8 +354,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Constructs an URI expressing the existing path</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>path</tt></i>:</span></td>
 <td>the resource locator in a filesystem notation</td>
@@ -384,8 +375,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Prints the URI in the stream @stream.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>stream</tt></i>:</span></td>
 <td>a FILE* for the output</td>
@@ -406,8 +397,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Save the URI as an escaped string</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>uri</tt></i>:</span></td>
 <td>pointer to an <a href="libxml2-uri.html#xmlURI">xmlURI</a>
@@ -428,8 +419,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Escaping routine, does not do validity checks ! It will try to escape the chars needing this, but this is heuristic based it's impossible to be sure.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the string of the URI to escape</td>
@@ -449,8 +440,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>This routine escapes a string to hex, ignoring unreserved <a href="libxml2-SAX.html#characters">characters</a> a-z, A-Z, 0-9, "-._~", a few sub-delims "!*'()", the gen-delim "@" (why?) and the <a href="libxml2-SAX.html#characters">characters</a> in the exception list.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>string to escape</td>
@@ -474,8 +465,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 </pre>
 <p>Unescaping routine, but does not check that the string is an URI. The output is a direct unsigned char translation of %XX values (no encoding) Note that the length of the result can only be smaller or same size as the input string.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the string to unescape</td>
@@ -498,7 +489,8 @@ char *	<a href="#xmlURIUnescapeString">xmlURIUnescapeString</a>		(const char * s
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-uri.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-uri.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

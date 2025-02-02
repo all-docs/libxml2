@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-entities.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-entities.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>entities: interface for the XML entities handling</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-encoding.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-globals.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">entities</span></h2>
 <p>entities - interface for the XML entities handling</p>
 <p>this module provides some of the entity API needed for the parser and applications. </p>
@@ -93,8 +84,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new entity for this document.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -134,8 +125,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new entity for this document DTD external subset.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -175,8 +166,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Register a new entity for this document. Available since 2.13.0.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -232,8 +223,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a copy of an entity table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An entity table</td>
@@ -253,8 +244,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>create and initialize an empty entities hash table. This really doesn't make sense and should be deprecated</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>Returns</tt></i>:</span></td>
 <td>the <a href="libxml2-entities.html#xmlEntitiesTablePtr">xmlEntitiesTablePtr</a> just created or NULL in case of error.</td>
 </tr></tbody>
@@ -268,8 +259,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This will dump the content of the entity table as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>An XML buffer.</td>
@@ -289,8 +280,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>This will dump the content of the entity table as an XML DTD definition</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>An XML buffer.</td>
@@ -310,8 +301,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>TODO: remove xmlEncodeEntities, once we are not afraid of breaking binary compatibility People must migrate their code to <a href="libxml2-entities.html#xmlEncodeEntitiesReentrant">xmlEncodeEntitiesReentrant</a> ! This routine will issue a warning when encountered.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document containing the string</td>
@@ -335,8 +326,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Do a global encoding of a string, replacing the predefined entities and non ASCII values with their entities and CharRef counterparts. Contrary to xmlEncodeEntities, this routine is reentrant, and result must be deallocated.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document containing the string</td>
@@ -360,8 +351,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Do a global encoding of a string, replacing the predefined entities this routine is reentrant, and result must be deallocated.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document containing the string</td>
@@ -385,8 +376,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Deallocate the memory used by an entities hash table.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>table</tt></i>:</span></td>
 <td>An entity table</td>
 </tr></tbody>
@@ -400,8 +391,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Frees the entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>entity</tt></i>:</span></td>
 <td>an entity</td>
 </tr></tbody>
@@ -415,8 +406,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Do an entity lookup in the document entity hash table and</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document referencing the entity</td>
@@ -440,8 +431,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Do an entity lookup in the DTD entity hash table and</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document referencing the entity</td>
@@ -465,8 +456,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Do an entity lookup in the internal and external subsets and</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document referencing the entity</td>
@@ -490,8 +481,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check whether this name is an predefined entity.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>name</tt></i>:</span></td>
 <td>the entity name</td>
@@ -519,8 +510,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Create a new entity, this differs from xmlAddDocEntity() that if the document is NULL or has no internal subset defined, then an unlinked entity structure will be returned, it is then the responsibility of the caller to link it to the document later or free it when not needed anymore.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>doc</tt></i>:</span></td>
 <td>the document</td>
@@ -555,7 +546,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-entities.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-entities.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:08 GMT --></html>

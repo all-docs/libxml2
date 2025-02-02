@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlstring.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlstring.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xmlstring: set of routines to process strings</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xmlschemastypes.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xmlunicode.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xmlstring</span></h2>
 <p>xmlstring - set of routines to process strings</p>
 <p>type and interfaces needed for the internal string handling of the library, especially UTF8 processing. </p>
@@ -86,8 +77,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strdup for char's to xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the input char *</td>
@@ -107,8 +98,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strndup for char's to xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the input char *</td>
@@ -132,8 +123,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Checks @utf for being valid UTF-8. @utf is assumed to be null-terminated. This function is not super-strict, as it will allow longer UTF-8 sequences than necessary. Note that Java is capable of producing these sequences if provoked. Also note, this routine checks for the 4-byte maximum size, but does not check for 0x10ffff maximum value.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>Pointer to putative UTF-8 encoded string.</td>
@@ -153,8 +144,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Read the first UTF8 character from @utf</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>a sequence of UTF-8 encoded bytes</td>
@@ -178,8 +169,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Check if both strings are equal of have same content. Should be a bit more readable and faster than xmlStrcmp()</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str1</tt></i>:</span></td>
 <td>the first <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -203,8 +194,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Formats @msg and places result into @buf.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the result buffer.</td>
@@ -236,8 +227,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Check if a QName is Equal to a given string</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>pref</tt></i>:</span></td>
 <td>the prefix of the QName</td>
@@ -265,8 +256,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Formats @msg and places result into @buf.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>the result buffer.</td>
@@ -298,8 +289,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strcasecmp for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str1</tt></i>:</span></td>
 <td>the first <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -323,8 +314,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a case-ignoring strstr for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array (haystack)</td>
@@ -348,8 +339,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strcat for array of xmlChar's. Since they are supposed to be encoded in UTF-8 or an encoding with 8bit based chars, we assume a termination mark of '0'.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the original <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array</td>
@@ -373,8 +364,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strchr for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array</td>
@@ -398,8 +389,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strcmp for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str1</tt></i>:</span></td>
 <td>the first <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -423,8 +414,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strdup for array of xmlChar's. Since they are supposed to be encoded in UTF-8 or an encoding with 8bit based chars, we assume a termination mark of '0'.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the input <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -444,8 +435,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>length of a xmlChar's string</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array</td>
@@ -465,8 +456,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strncasecmp for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str1</tt></i>:</span></td>
 <td>the first <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -494,8 +485,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strncat for array of xmlChar's, it will extend @cur with the len first bytes of @add. Note that if @len &lt; 0 then this is an API error and NULL will be returned.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the original <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array</td>
@@ -523,8 +514,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>same as xmlStrncat, but creates a new string. The original two strings are not freed. If @len is &lt; 0 then the length will be calculated automatically.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str1</tt></i>:</span></td>
 <td>first <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> string</td>
@@ -552,8 +543,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strncmp for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str1</tt></i>:</span></td>
 <td>the first <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -581,8 +572,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strndup for array of xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>cur</tt></i>:</span></td>
 <td>the input <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> *</td>
@@ -606,8 +597,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strstr for xmlChar's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array (haystack)</td>
@@ -631,8 +622,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Extract a substring of a given string</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>str</tt></i>:</span></td>
 <td>the <a href="libxml2-xmlstring.html#xmlChar">xmlChar</a> * array (haystack)</td>
@@ -660,8 +651,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>compares the two UCS4 values</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf1</tt></i>:</span></td>
 <td>pointer to first UTF8 char</td>
@@ -686,8 +677,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>calculates the internal size of a UTF8 character</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>pointer to the UTF8 character</td>
@@ -707,8 +698,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>compute the length of an UTF8 string, it doesn't do a full UTF8 checking of the content of the string.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>a sequence of UTF-8 encoded bytes</td>
@@ -728,8 +719,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a function to provide the relative location of a UTF8 char</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>the input UTF8 *</td>
@@ -753,8 +744,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a strndup for array of UTF8's</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>the input UTF8 *</td>
@@ -778,8 +769,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>a function to provide the equivalent of fetching a character from a string array</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>the input UTF8 *</td>
@@ -803,8 +794,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>storage size of an UTF8 string the behaviour is not guaranteed if the input string is not UTF-8</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>a sequence of UTF-8 encoded bytes</td>
@@ -828,8 +819,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 </pre>
 <p>Create a substring from a given UTF-8 string Note: positions are given in units of UTF-8 chars</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>utf</tt></i>:</span></td>
 <td>a sequence of UTF-8 encoded bytes</td>
@@ -852,7 +843,8 @@ int	<a href="#xmlUTF8Strsize">xmlUTF8Strsize</a>			(const <a href="libxml2-xmlst
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlstring.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlstring.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>

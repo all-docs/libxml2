@@ -1,8 +1,5 @@
-<html>
+<html><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlregexp.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlregexp.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>xmlregexp: regular expressions handling</title>
 <meta name="generator" content="Libxml2 devhelp stylesheet">
@@ -12,13 +9,7 @@
 <link rel="chapter" href="general.html" title="API">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
-<td><a accesskey="p" href="libxml2-xmlreader.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="general.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index-2.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<td><a accesskey="n" href="libxml2-xmlsave.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-<th width="100%" align="center">libxml2 Reference Manual</th>
-</tr></table>
+
 <h2><span class="refentrytitle">xmlregexp</span></h2>
 <p>xmlregexp - regular expressions handling</p>
 <p>basic API for libxml regular expressions handling used for XML Schemas and validation. </p>
@@ -165,8 +156,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Callback function when doing a transition in the automata</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>exec</tt></i>:</span></td>
 <td>the regular expression context</td>
@@ -210,8 +201,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Debugging facility provides the number of allocated nodes over lifetime</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an expression context</td>
@@ -231,8 +222,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Debugging facility provides the number of allocated nodes at a that point</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an expression context</td>
@@ -252,8 +243,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Serialize the expression as compiled to the buffer</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>buf</tt></i>:</span></td>
 <td>a buffer to receive the output</td>
@@ -273,8 +264,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Evaluates the expression resulting from @exp consuming a sub expression @sub Based on algebraic derivation and sometimes direct Brzozowski derivation it usually takes less than linear time and can handle expressions generating infinite languages.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expressions context</td>
@@ -302,8 +293,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Dereference the expression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -323,8 +314,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free an expression context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>an expression context</td>
 </tr></tbody>
@@ -338,8 +329,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find all the strings used in @exp and store them in @list</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -371,8 +362,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Find all the strings that appears at the start of the languages accepted by @exp and store them in @list. E.g. for (a, b) | c it will return the list [a, c]</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -404,8 +395,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Finds if the expression is nillable, i.e. if it accepts the empty sequence</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>exp</tt></i>:</span></td>
 <td>the expression</td>
@@ -425,8 +416,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Indicate the maximum number of input a expression can accept</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>expr</tt></i>:</span></td>
 <td>a compiled expression</td>
@@ -446,8 +437,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get the atom associated to this name from that context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -475,8 +466,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Creates a new context for manipulating expressions</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>maxNodes</tt></i>:</span></td>
 <td>the maximum number of nodes</td>
@@ -500,8 +491,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get the atom associated to the choice @left | @right Note that @left and @right are consumed in the operation, to keep an handle on them use xmlExpRef() and use xmlExpFree() to release them, this is true even in case of failure (unless ctxt == NULL).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -529,8 +520,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get the atom associated to the range (@subset){@min, @max} Note that @subset is consumed in the operation, to keep an handle on it use xmlExpRef() and use xmlExpFree() to release it, this is true even in case of failure (unless ctxt == NULL).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -562,8 +553,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Get the atom associated to the sequence @left , @right Note that @left and @right are consumed in the operation, to keep an handle on them use xmlExpRef() and use xmlExpFree() to release them, this is true even in case of failure (unless ctxt == NULL).</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -591,8 +582,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Minimal parser for regexps, it understand the following constructs - string terminals - choice operator | - sequence operator , - subexpressions (...) - usual cardinality operators + * and ? - finite sequences { min, max } - infinite sequences { min, * } There is minimal checkings made especially no checking on strings values</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expressions context</td>
@@ -616,8 +607,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Increase the <a href="libxml2-SAX.html#reference">reference</a> count of the expression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>exp</tt></i>:</span></td>
 <td>the expression</td>
 </tr></tbody>
@@ -631,8 +622,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Do one step of Brzozowski derivation of the expression @exp with respect to the input string</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expression context</td>
@@ -664,8 +655,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check whether @exp accepts all the languages accepted by @sub the input being a subexpression.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>ctxt</tt></i>:</span></td>
 <td>the expressions context</td>
@@ -693,8 +684,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Extract error information from the regexp execution, the parameter @string will be updated with the value pushed and not accepted, the parameter @values must point to an array of @nbval string pointers on return nbval will contain the number of possible strings in that state and the @values array will be updated with them. The string values</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>exec</tt></i>:</span></td>
 <td>a regexp execution context generating an error</td>
@@ -734,8 +725,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Extract information from the regexp execution, the parameter @values must point to an array of @nbval string pointers on return nbval will contain the number of possible strings in that state and the @values array will be updated with them. The string values</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>exec</tt></i>:</span></td>
 <td>a regexp execution context</td>
@@ -771,8 +762,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Push one input token in the execution context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>exec</tt></i>:</span></td>
 <td>a regexp execution context or NULL to indicate the end</td>
@@ -800,8 +791,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Push one input token in the execution context</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>exec</tt></i>:</span></td>
 <td>a regexp execution context or NULL to indicate the end</td>
@@ -833,8 +824,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free the structures associated to a regular expression evaluation context.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>exec</tt></i>:</span></td>
 <td>a regular expression evaluation context</td>
 </tr></tbody>
@@ -848,8 +839,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Free a regexp</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody><tr>
+<colgroup><col align="left">
+</colgroup><tbody><tr>
 <td><span class="term"><i><tt>regexp</tt></i>:</span></td>
 <td>the regexp</td>
 </tr></tbody>
@@ -863,8 +854,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Build a context used for progressive evaluation of a regexp.</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>comp</tt></i>:</span></td>
 <td>a precompiled regular expression</td>
@@ -892,8 +883,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Parses a regular expression conforming to XML Schemas Part 2 Datatype Appendix F and builds an automata suitable for testing strings against that regular expression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>regexp</tt></i>:</span></td>
 <td>a regular expression string</td>
@@ -913,8 +904,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check if the regular expression generates the value</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>comp</tt></i>:</span></td>
 <td>the compiled regular expression</td>
@@ -938,8 +929,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Check if the regular expression is determinist</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>comp</tt></i>:</span></td>
 <td>the compiled regular expression</td>
@@ -959,8 +950,8 @@ The content of this structure is not made public by the API.
 </pre>
 <p>Print the content of the compiled regular expression</p>
 <div class="variablelist"><table border="0">
-<col align="left">
-<tbody>
+<colgroup><col align="left">
+</colgroup><tbody>
 <tr>
 <td><span class="term"><i><tt>output</tt></i>:</span></td>
 <td>the file for the output debug</td>
@@ -975,7 +966,8 @@ The content of this structure is not made public by the API.
 <hr>
 </div>
 </div>
-</body>
 
-<!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlregexp.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT -->
-</html>
+
+
+
+</body><!-- Mirrored from gnome.pages.gitlab.gnome.org/libxml2/devhelp/libxml2-xmlregexp.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2025 16:05:09 GMT --></html>
